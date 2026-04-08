@@ -3,7 +3,7 @@
 ## Second Essay — continuation of *The Arithmetic Aufhebung: A Proposition*
 
 **Elfege Arthur Leylavergne**
-*Ph.D. in Philosophy, Université de Nantes (2014)*
+*Ph.D. in Philosophy (Nantes, 2014) — Software Engineer*
 
 > **Abstract.** This essay extends the arithmetic Aufhebung (`|-1|=(-1)²`) into a theory of contingency and learning. Contingency is not randomness: it is a *saturated zero* — the co-presence of opposed necessities whose resultant is null but whose content is maximal, mapping exactly to `1+(-1)=0`. Two types of friction are distinguished: δ₁ (logical, *a priori* — contradiction structurally implied by any position) and δ₂ (empirical — contingency encountered). A dialectical alternative to gradient descent is proposed: `W_{n+1} = W_n + α₁δ₁² + α₂δ₂²`, where friction is squared and added rather than subtracted. The understanding (*Verstand*) provides the ground truth against which friction is measured — not the enemy of reason, but its condition. Convergence is functional death; Aufhebung is growth. The open questions are the computational operator for δ² in high-dimensional weight space (an engineering problem) and the closure criterion that would play the role of the Hegelian absolute (a philosophy problem).
 
