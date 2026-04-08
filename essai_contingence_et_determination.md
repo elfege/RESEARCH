@@ -42,7 +42,10 @@ The present essay extends this proposition toward the category of contingency an
 
 ### I. Contingency Is Not Randomness
 
-Two categories must be rigorously distinguished that are ordinarily confused, a confusion which is in itself the mark of a failure to reflect upon quantity, as we had already glimpsed in the thesis with respect to the deficient treatment Hegel makes of this category.
+Two categories must be rigorously distinguished that are ordinarily confused, a confusion which is in itself the mark of a failure to reflect upon quantity, as we had already glimpsed in the thesis with respect to the deficient treatment Hegel makes of this category.[^1] The distinction between randomness and contingency developed below extends the analysis first proposed in the same work.[^2]
+
+[^1]: Cf. *Une critique hégélienne de Hegel*, §2.3.1 "La position paradoxale de Hegel," pp. 191–197; §4.3 "La quantité comme catégorie transversale du syllogisme," pp. 426–433.
+[^2]: Cf. *ibid.*, §1.1.4 "Le logique et le rationnel : le statut de la contingence," pp. 56–70; §3.3 "L'effectif et le rationnel," pp. 361–384.
 
 Randomness, *Zufall* in the weak sense, is the absence of internal determination, that is to say the null point where no necessity prevails because none is present. Randomness is quantifiable precisely because it is empty: probability deploys itself there without encountering resistance, just as one can easily describe the behavior of a marble drawn from a bag containing five blue and five red marbles, since no internal determination complicates the schema of indifference.
 
@@ -197,7 +200,10 @@ Le présent essai prolonge cette proposition en direction de la catégorie de la
 
 ### I. La contingence n'est pas le hasard
 
-Il faut distinguer rigoureusement deux catégories que l'on confond ordinairement et dont la confusion est en elle-même la marque d'un défaut de réflexion sur la quantité, ce que nous avions déjà entrevu dans la thèse relativement au traitement défaillant que Hegel fait de cette catégorie.
+Il faut distinguer rigoureusement deux catégories que l'on confond ordinairement et dont la confusion est en elle-même la marque d'un défaut de réflexion sur la quantité, ce que nous avions déjà entrevu dans la thèse relativement au traitement défaillant que Hegel fait de cette catégorie[^3]. La distinction entre hasard et contingence développée ci-dessous prolonge l'analyse proposée dans le même ouvrage[^4].
+
+[^3]: Cf. *Une critique hégélienne de Hegel*, §2.3.1 « La position paradoxale de Hegel », pp. 191–197 ; §4.3 « La quantité comme catégorie transversale du syllogisme », pp. 426–433.
+[^4]: Cf. *ibid.*, §1.1.4 « Le logique et le rationnel : le statut de la contingence », pp. 56–70 ; §3.3 « L'effectif et le rationnel », pp. 361–384.
 
 Le hasard, *Zufall* au sens faible, est l'absence de détermination interne, c'est-à-dire le point de nullité où aucune nécessité ne prévaut parce qu'aucune n'est présente. Le hasard est quantifiable précisément parce qu'il est vide : la probabilité s'y déploie sans rencontrer de résistance, tout comme l'on peut décrire aisément le comportement d'une bille tirée au sort dans un sac où se trouvent cinq billes bleues et cinq billes rouges, puisque aucune détermination intérieure ne vient compliquer le schème de l'indifférence.
 
