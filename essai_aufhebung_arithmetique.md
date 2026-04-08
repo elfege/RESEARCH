@@ -40,7 +40,7 @@ Les deux opérations donnent le même résultat. Mais l'une *cache* la médiatio
 
 On objectera que l'arithmétique ne « se sait » pas, et que le *für sich* hégélien suppose une conscience réflexive. L'objection porte si l'on lit Hegel à partir de la *Phénoménologie de l'Esprit* (1807), où le pour-soi est lié au sujet conscient.
 
-Mais la *Science de la Logique* (1812-1816) — l'œuvre de maturité — déploie le pour-soi comme structure logique pure : est pour-soi ce qui se rapporte à soi-même par la médiation de son autre. La conscience n'est pas requise. Seule l'est la structure auto-référentielle.
+Mais la *Science de la Logique* (1812-1816) — l'œuvre de maturité — déploie le pour-soi comme structure logique pure : est pour-soi ce qui se rapporte à soi-même par la médiation de son autre. La conscience n'est pas requise. Seule l'est la structure auto-référentielle — condition primitive que l'on retrouve déjà dans le vivant comme première forme de rapport à soi.
 
 Or (-1)² est précisément cela : le négatif qui se rapporte à soi par soi — *par son autre*, qui est lui-même. La structure de l'en-et-pour-soi (*an und für sich*) est inscrite dans l'opération arithmétique elle-même, antérieurement à tout sujet.
 
@@ -111,7 +111,7 @@ Both operations yield the same result. But one *conceals* the mediation, the oth
 
 One might object that arithmetic does not "know itself," and that the Hegelian *für sich* presupposes a reflexive consciousness. The objection holds if one reads Hegel from the *Phenomenology of Spirit* (1807), where the for-itself is bound to the conscious subject.
 
-But the *Science of Logic* (1812–1816) — the mature work — deploys the for-itself as a pure logical structure: what is for-itself is what relates to itself through the mediation of its other. Consciousness is not required. Only the self-referential structure is.
+But the *Science of Logic* (1812–1816) — the mature work — deploys the for-itself as a pure logical structure: what is for-itself is what relates to itself through the mediation of its other. Consciousness is not required. Only the self-referential structure is — a primitive condition already found in living beings as the first form of self-relation.
 
 And (-1)² is precisely that: the negative relating to itself through itself — *through its other*, which is itself. The structure of being-in-and-for-itself (*an und für sich*) is inscribed in the arithmetic operation itself, prior to any subject.
 
