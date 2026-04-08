@@ -5,6 +5,23 @@
 **Elfege Arthur Leylavergne**
 *Docteur en philosophie, Université de Nantes (2014)*
 
+> **Abstract.** This essay extends the arithmetic Aufhebung (`|-1|=(-1)²`) into a theory of contingency and learning. Contingency is not randomness: it is a *saturated zero* — the co-presence of opposed necessities whose resultant is null but whose content is maximal, mapping exactly to `1+(-1)=0`. Two types of friction are distinguished: δ₁ (logical, *a priori* — contradiction structurally implied by any position) and δ₂ (empirical — contingency encountered). A dialectical alternative to gradient descent is proposed: `W_{n+1} = W_n + α₁δ₁² + α₂δ₂²`, where friction is squared and added rather than subtracted. The understanding (*Verstand*) provides the ground truth against which friction is measured — not the enemy of reason, but its condition. Convergence is functional death; Aufhebung is growth. The open questions are the computational operator for δ² in high-dimensional weight space (an engineering problem) and the closure criterion that would play the role of the Hegelian absolute (a philosophy problem).
+
+**[English version below](#contingency-as-a-reservoir-of-determination-from-arithmetic-aufhebung-to-a-logic-of-growth)**
+
+---
+
+### Table des matières
+
+- [Rappel](#rappel)
+- [I. La contingence n'est pas le hasard](#i-la-contingence-nest-pas-le-hasard)
+- [II. La contingence comme réservoir de détermination](#ii-la-contingence-comme-réservoir-de-détermination)
+- [III. Deux types de friction](#iii-deux-types-de-friction)
+- [IV. L'Aufhebung comme règle de mise à jour](#iv-laufhebung-comme-règle-de-mise-à-jour)
+- [V. Le sol de l'entendement](#v-le-sol-de-lentendement)
+- [VI. Convergence et croissance](#vi-convergence-et-croissance)
+- [Conclusion provisoire](#conclusion-provisoire)
+
 ---
 
 ### Rappel
@@ -144,6 +161,21 @@ Ce qui manque encore, et que les essais suivants devront aborder, c'est d'une pa
 
 **Elfege Arthur Leylavergne**
 *Ph.D. in Philosophy, Université de Nantes (2014)*
+
+**[Version française ci-dessus](#la-contingence-comme-réservoir-de-détermination--de-laufhebung-arithmétique-à-une-logique-de-la-croissance)**
+
+---
+
+### Table of Contents
+
+- [Recall](#recall)
+- [I. Contingency Is Not Randomness](#i-contingency-is-not-randomness)
+- [II. Contingency as Reservoir of Determination](#ii-contingency-as-reservoir-of-determination)
+- [III. Two Types of Friction](#iii-two-types-of-friction)
+- [IV. Aufhebung as Update Rule](#iv-aufhebung-as-update-rule)
+- [V. The Ground of the Understanding](#v-the-ground-of-the-understanding)
+- [VI. Convergence and Growth](#vi-convergence-and-growth)
+- [Provisional Conclusion](#provisional-conclusion)
 
 ---
 

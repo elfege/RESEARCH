@@ -5,6 +5,20 @@
 **Elfege Arthur Leylavergne**
 *Docteur en philosophie, Université de Nantes (2014)*
 
+> **Abstract.** Three lines of elementary arithmetic — `1+(-1)=0`, `1+|-1|=2`, `|-1|=(-1)²` — suffice to expose the structure of the Hegelian Aufhebung. Absolute value suppresses the negative sign immediately (understanding); squaring traverses negation through itself, producing the positive by mediation (reason). Both operations yield the same result, but the former conceals the mediation while the latter shows it. The identity `|-1|=(-1)²` reveals the Aufhebung as a productive self-relation of negation — not synthesis, not annihilation, but *Verhältnis*. The for-itself (*für sich*), read from the *Science of Logic* rather than the *Phenomenology*, requires no consciousness: only the self-referential structure, which is already inscribed in the arithmetic operation itself.
+
+**[English version below](#the-arithmetic-aufhebung-a-proposition)**
+
+---
+
+### Table des matières
+
+- [Proposition](#proposition)
+- [Développement](#développement)
+- [Sur le pour-soi](#sur-le-pour-soi)
+- [Remarque sur le Verhältnis](#remarque-sur-le-verhältnis)
+- [Conclusion](#conclusion)
+
 ---
 
 ### Proposition
@@ -75,6 +89,18 @@ La clarification *est* la contribution. Hegel a consacré des centaines de pages
 
 **Elfege Arthur Leylavergne**
 *Ph.D. in Philosophy, Université de Nantes (2014)*
+
+**[Version française ci-dessus](#laufhebung-arithmétique--une-proposition)**
+
+---
+
+### Table of Contents
+
+- [Proposition](#proposition-1)
+- [Development](#development)
+- [On the for-itself](#on-the-for-itself)
+- [Note on Verhältnis](#note-on-verhältnis)
+- [Conclusion](#conclusion-1)
 
 ---
 
