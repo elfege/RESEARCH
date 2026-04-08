@@ -1,88 +1,3 @@
-# L'Aufhebung arithmétique : une proposition
-
-## La valeur absolue comme suppression-conservation de la négation
-
-**Elfege Arthur Leylavergne**
-*Docteur en philosophie, Université de Nantes (2014)*
-
-> **Abstract.** Three lines of elementary arithmetic — `1+(-1)=0`, `1+|-1|=2`, `|-1|=(-1)²` — suffice to expose the structure of the Hegelian Aufhebung. Absolute value suppresses the negative sign immediately (understanding); squaring traverses negation through itself, producing the positive by mediation (reason). Both operations yield the same result, but the former conceals the mediation while the latter shows it. The identity `|-1|=(-1)²` reveals the Aufhebung as a productive self-relation of negation — not synthesis, not annihilation, but *Verhältnis*. The for-itself (*für sich*), read from the *Science of Logic* rather than the *Phenomenology*, requires no consciousness: only the self-referential structure, which is already inscribed in the arithmetic operation itself.
-
-**[English version below](#the-arithmetic-aufhebung-a-proposition)**
-
----
-
-### Table des matières
-
-- [Proposition](#proposition)
-- [Développement](#développement)
-- [Sur le pour-soi](#sur-le-pour-soi)
-- [Remarque sur le Verhältnis](#remarque-sur-le-verhältnis)
-- [Conclusion](#conclusion)
-
----
-
-### Proposition
-
-Trois lignes d'arithmétique élémentaire suffisent à exposer la structure de l'Aufhebung hégélienne :
-
-```
-1 + (-1) = 0
-1 + |-1| = 2
-|-1| = (-1)²
-```
-
----
-
-### Développement
-
-**Première ligne : la négation abstraite.** L'affirmation et sa négation se rencontrent. Le résultat est l'annihilation. C'est la contradiction telle que l'entendement (*Verstand*) la conçoit : deux termes opposés se suppriment mutuellement. Il ne reste rien.
-
-**Deuxième ligne : la négation conservée.** Les mêmes termes, mais la négation est cette fois *préservée* en tant que grandeur par la valeur absolue. Le résultat n'est plus zéro mais deux — davantage que le point de départ. La contradiction, au lieu de détruire, *produit*. C'est le passage de l'entendement à la raison (*Vernunft*) : non pas supprimer le négatif, mais le traverser.
-
-**Troisième ligne : l'identité décisive.** La valeur absolue du négatif est égale au carré du négatif. Or le carré de (-1) n'est rien d'autre que (-1) × (-1) — la négation entrant en *rapport* (*Verhältnis*) avec elle-même. Le négatif passe par un autre qui est lui-même.
-
-C'est ici que l'Aufhebung se donne à voir dans sa structure la plus nue :
-
-- **|-1|** supprime le signe négatif. L'opération est *immédiate* : la négation disparaît, la grandeur est conservée. L'entendement nettoie.
-- **(-1)²** traverse la négation par elle-même. L'opération est *médiatisée* : le négatif se rapporte à soi par son autre (qui est soi), et c'est ce passage — ce rapport — qui produit le positif.
-
-Les deux opérations donnent le même résultat. Mais l'une *cache* la médiation, l'autre la *montre*. La valeur absolue est l'Aufhebung vue par l'entendement ; le carré est l'Aufhebung vue par la raison.
-
----
-
-### Sur le pour-soi
-
-On objectera que l'arithmétique ne « se sait » pas, et que le *für sich* hégélien suppose une conscience réflexive. L'objection porte si l'on lit Hegel à partir de la *Phénoménologie de l'Esprit* (1807), où le pour-soi est lié au sujet conscient.
-
-Mais la *Science de la Logique* (1812-1816) — l'œuvre de maturité — déploie le pour-soi comme structure logique pure : est pour-soi ce qui se rapporte à soi-même par la médiation de son autre. La conscience n'est pas requise. Seule l'est la structure auto-référentielle — condition primitive que l'on retrouve déjà dans le vivant comme première forme de rapport à soi.
-
-Or (-1)² est précisément cela : le négatif qui se rapporte à soi par soi — *par son autre*, qui est lui-même. La structure de l'en-et-pour-soi (*an und für sich*) est inscrite dans l'opération arithmétique elle-même, antérieurement à tout sujet.
-
----
-
-### Remarque sur le Verhältnis
-
-Le rapport (*Verhältnis*) n'est pas un moyen vers la médiation. Il *est* la médiation. Dans (-1) × (-1), la multiplication est le rapport lui-même — l'opération par laquelle le négatif entre en relation avec son autre (soi) et produit. Sans rapport, pas de passage. Le résultat (1) n'est pas donné d'avance ; il est *engendré* par le rapport.
-
-C'est pourquoi l'Aufhebung n'est pas une soustraction, ni une annihilation, ni même une « synthèse » au sens scolaire du terme. Elle est un rapport productif de la négation avec elle-même.
-
----
-
-### Conclusion
-
-Ces trois lignes ne démontrent pas l'Aufhebung. Elles la *clarifient* — en la montrant à l'œuvre dans une opération que tout élève de collège connaît sans en mesurer la portée spéculative. La valeur absolue est l'Aufhebung arithmétique : la suppression-conservation du négatif, identique au résultat de la négation de la négation.
-
-La clarification *est* la contribution. Hegel a consacré des centaines de pages à exposer ce mouvement. L'arithmétique l'expose en trois lignes — non pas contre Hegel, mais comme illustration de ce qu'il cherchait à dire : que la structure dialectique n'est pas une invention philosophique, mais une forme universelle inscrite dans le réel le plus élémentaire.
-
----
-
-*Paris — New York, avril 2026*
-*D'après une intuition nocturne, capturée telle quelle.*
-
----
-
----
-
 # The Arithmetic Aufhebung: A Proposition
 
 ## Absolute Value as the Sublation of Negation
@@ -90,17 +5,19 @@ La clarification *est* la contribution. Hegel a consacré des centaines de pages
 **Elfege Arthur Leylavergne**
 *Ph.D. in Philosophy, Université de Nantes (2014)*
 
-**[Version française ci-dessus](#laufhebung-arithmétique--une-proposition)**
+> **Abstract.** Three lines of elementary arithmetic — `1+(-1)=0`, `1+|-1|=2`, `|-1|=(-1)²` — suffice to expose the structure of the Hegelian Aufhebung. Absolute value suppresses the negative sign immediately (understanding); squaring traverses negation through itself, producing the positive by mediation (reason). Both operations yield the same result, but the former conceals the mediation while the latter shows it. The identity `|-1|=(-1)²` reveals the Aufhebung as a productive self-relation of negation — not synthesis, not annihilation, but *Verhältnis*. The for-itself (*für sich*), read from the *Science of Logic* rather than the *Phenomenology*, requires no consciousness: only the self-referential structure, which is already inscribed in the arithmetic operation itself.
+
+**[Version française ci-dessous](#laufhebung-arithmétique--une-proposition)**
 
 ---
 
 ### Table of Contents
 
-- [Proposition](#proposition-1)
+- [Proposition](#proposition)
 - [Development](#development)
 - [On the for-itself](#on-the-for-itself)
 - [Note on Verhältnis](#note-on-verhältnis)
-- [Conclusion](#conclusion-1)
+- [Conclusion](#conclusion)
 
 ---
 
@@ -161,3 +78,86 @@ The clarification *is* the contribution. Hegel devoted hundreds of pages to expo
 
 *Paris — New York, April 2026*
 *From a nocturnal intuition, captured as-is.*
+
+---
+
+---
+
+# L'Aufhebung arithmétique : une proposition
+
+## La valeur absolue comme suppression-conservation de la négation
+
+**Elfege Arthur Leylavergne**
+*Docteur en philosophie, Université de Nantes (2014)*
+
+**[English version above](#the-arithmetic-aufhebung-a-proposition)**
+
+---
+
+### Table des matières
+
+- [Proposition](#proposition-1)
+- [Développement](#développement)
+- [Sur le pour-soi](#sur-le-pour-soi)
+- [Remarque sur le Verhältnis](#remarque-sur-le-verhältnis)
+- [Conclusion](#conclusion-1)
+
+---
+
+### Proposition
+
+Trois lignes d'arithmétique élémentaire suffisent à exposer la structure de l'Aufhebung hégélienne :
+
+```
+1 + (-1) = 0
+1 + |-1| = 2
+|-1| = (-1)²
+```
+
+---
+
+### Développement
+
+**Première ligne : la négation abstraite.** L'affirmation et sa négation se rencontrent. Le résultat est l'annihilation. C'est la contradiction telle que l'entendement (*Verstand*) la conçoit : deux termes opposés se suppriment mutuellement. Il ne reste rien.
+
+**Deuxième ligne : la négation conservée.** Les mêmes termes, mais la négation est cette fois *préservée* en tant que grandeur par la valeur absolue. Le résultat n'est plus zéro mais deux — davantage que le point de départ. La contradiction, au lieu de détruire, *produit*. C'est le passage de l'entendement à la raison (*Vernunft*) : non pas supprimer le négatif, mais le traverser.
+
+**Troisième ligne : l'identité décisive.** La valeur absolue du négatif est égale au carré du négatif. Or le carré de (-1) n'est rien d'autre que (-1) × (-1) — la négation entrant en *rapport* (*Verhältnis*) avec elle-même. Le négatif passe par un autre qui est lui-même.
+
+C'est ici que l'Aufhebung se donne à voir dans sa structure la plus nue :
+
+- **|-1|** supprime le signe négatif. L'opération est *immédiate* : la négation disparaît, la grandeur est conservée. L'entendement nettoie.
+- **(-1)²** traverse la négation par elle-même. L'opération est *médiatisée* : le négatif se rapporte à soi par son autre (qui est soi), et c'est ce passage — ce rapport — qui produit le positif.
+
+Les deux opérations donnent le même résultat. Mais l'une *cache* la médiation, l'autre la *montre*. La valeur absolue est l'Aufhebung vue par l'entendement ; le carré est l'Aufhebung vue par la raison.
+
+---
+
+### Sur le pour-soi
+
+On objectera que l'arithmétique ne « se sait » pas, et que le *für sich* hégélien suppose une conscience réflexive. L'objection porte si l'on lit Hegel à partir de la *Phénoménologie de l'Esprit* (1807), où le pour-soi est lié au sujet conscient.
+
+Mais la *Science de la Logique* (1812-1816) — l'œuvre de maturité — déploie le pour-soi comme structure logique pure : est pour-soi ce qui se rapporte à soi-même par la médiation de son autre. La conscience n'est pas requise. Seule l'est la structure auto-référentielle — condition primitive que l'on retrouve déjà dans le vivant comme première forme de rapport à soi.
+
+Or (-1)² est précisément cela : le négatif qui se rapporte à soi par soi — *par son autre*, qui est lui-même. La structure de l'en-et-pour-soi (*an und für sich*) est inscrite dans l'opération arithmétique elle-même, antérieurement à tout sujet.
+
+---
+
+### Remarque sur le Verhältnis
+
+Le rapport (*Verhältnis*) n'est pas un moyen vers la médiation. Il *est* la médiation. Dans (-1) × (-1), la multiplication est le rapport lui-même — l'opération par laquelle le négatif entre en relation avec son autre (soi) et produit. Sans rapport, pas de passage. Le résultat (1) n'est pas donné d'avance ; il est *engendré* par le rapport.
+
+C'est pourquoi l'Aufhebung n'est pas une soustraction, ni une annihilation, ni même une « synthèse » au sens scolaire du terme. Elle est un rapport productif de la négation avec elle-même.
+
+---
+
+### Conclusion
+
+Ces trois lignes ne démontrent pas l'Aufhebung. Elles la *clarifient* — en la montrant à l'œuvre dans une opération que tout élève de collège connaît sans en mesurer la portée spéculative. La valeur absolue est l'Aufhebung arithmétique : la suppression-conservation du négatif, identique au résultat de la négation de la négation.
+
+La clarification *est* la contribution. Hegel a consacré des centaines de pages à exposer ce mouvement. L'arithmétique l'expose en trois lignes — non pas contre Hegel, mais comme illustration de ce qu'il cherchait à dire : que la structure dialectique n'est pas une invention philosophique, mais une forme universelle inscrite dans le réel le plus élémentaire.
+
+---
+
+*Paris — New York, avril 2026*
+*D'après une intuition nocturne, capturée telle quelle.*
