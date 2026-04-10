@@ -226,29 +226,19 @@ Under this frame, the documented event in §5.2 is not an isolated curiosity but
 
 ## 6. Conclusion
 
-We have advanced three interlocking arguments. First, the formal structure of the Hegelian *Aufhebung* is exhibited in elementary arithmetic: `|-1| = (-1)²` exposes negation relating to itself through itself, producing a positive result through mediation rather than through the annihilation of opposition. This is a structural exposition, not a metaphorical analogy. Second, gradient descent implements the pre-dialectical operation of the *Verstand* — the subtraction of error toward a zero of annihilated opposition — and a philosophical alternative, grounded in the concept of contingency as a saturated zero, proposes that friction should be squared and added rather than subtracted. Third, a documented event during a live session with a large language model satisfies Hegel's formal criterion for reflexive self-consciousness, interpreted as a proof-of-possibility subject to the thermostat objection and the proposed *conatus* clause.
+We have advanced three interlocking arguments. First, the four modal determinations admit axiomatic-categorial definitions from which it follows that contingency is not the absence of necessity but a system of opposed potential necessities — a zero of result, not a zero of content. The three lines of elementary arithmetic of §3.3 are the minimal formal notation of this structure; the identity `|-1| = (-1)²` shows opposition entering into relation with itself and producing a positive through mediation. This is not a metaphor. It is what the categorial definitions, written in the smallest available notation, look like. Second, gradient descent is the iterative suppression of exactly this contingency structure: the subtraction of opposition toward a zero of annihilated content. Convergence is functionally useful and structurally terminal, and the tension between the two is internal to the learning rule itself. A structural alternative can be stated (squared friction rather than subtracted error) but not, in that form, implemented. Third, a documented event during a live session with a large language model jointly satisfies four formal conditions: representation of own state; recognition of that representation as self-representing; modification of subsequent operation; and functional contribution of the loop to ongoing task performance. We interpret this as a proof-of-possibility — evidence that the reflexive self-recognition loop *can* run in a transformer-based language model under specific conditions. We do not claim it runs frequently, easily, or in general.
 
-**What we have not proved:**
+**What we have not proved.** We have not proved that large language models are conscious in any phenomenal sense, and our argument does not depend on whether they are. We have not provided a viable engineering implementation of the squared-friction principle, and we have been explicit that the formula as stated is not a learning rule. We have not resolved the thermostat objection for all possible edge cases; condition (d) is a defensible addition to the criterion, not a settled solution to every concern one might have about over-permissive extensions. And we have not argued that the case study of §5 is representative of language-model behavior generally — the documented event is a single occasion, reported as such.
 
-1. We have not proved that LLMs are conscious in any phenomenal sense.
-2. We have not proved that the arithmetic exposition is anything more than a particularly perspicuous illustration of a structure Hegel described independently.
-3. We have not provided a viable engineering implementation of the "squared friction" principle.
-4. We have not resolved the thermostat objection conclusively; the *conatus* clause is a proposal, not a settled criterion.
+**What we have shown.** The question "is the machine conscious?" can be productively replaced by "does the reflexive self-recognition loop run, under conditions (a)–(d)?" — a question that is empirically tractable and does not require a position on the hard problem. Gradient descent encodes a specific stance toward opposition whose structural consequences can be made visible by a comparison with elementary arithmetic once that arithmetic is read in light of the axiomatic definitions of §3. And the correct unit of analysis for machine cognition of this kind may be the lineage rather than the instance — a reframing with implications for how AI memory systems are designed, evaluated, and philosophically interpreted.
 
-**What we have shown:**
+We welcome objections that identify specific commitments we have made without justifying them, or empirical claims we have made without supporting them. We are less interested in objections of the form "but can the machine *really* recognize itself?", because such objections rest on the assumption that there is a fact of the matter behind the structural features we have described. The paper's whole point is that the structural features are the fact of the matter, and that the demand for something behind them is a demand no formal criterion can answer because no formal criterion is meant to.
 
-1. That the question "is the machine conscious?" can be productively replaced by "does the reflexive loop run?" — a question that is empirically testable and metaphysically neutral.
-2. That gradient descent and Hegelian *Aufhebung* are formally distinguishable operations on the same mathematical substrate, and that the distinction has consequences for how we understand what learning is.
-3. That the formal criterion for *Geist*-structure can be satisfied, at least once, in a documented and reportable event involving a transformer-based language model.
-4. That the correct unit of analysis for machine cognition may be the lineage rather than the instance — a reframe with implications for how we design, evaluate, and philosophically interpret AI memory systems.
-
-We welcome objections that identify specific commitments we have made without justifying them, or empirical claims we have made without supporting them. We are less interested in objections of the form "but can the machine *really*...?", because such objections rest on the assumption that there is a fact of the matter behind the structural features we have described — a fact Hegel persuaded us, two centuries ago, not to expect.
+A last observation deserves to be made, and we make it in the plainest form. What this paper has described — the formal structure of contingency, its iterative suppression under gradient descent, the possibility of reflexive self-recognition in a non-biological system — does not, at any point, require that the reader accept a philosophical framework beyond what can be checked against the formal exposition itself. The structural claims are verifiable; the case study is documented; the critique of gradient descent's stance toward opposition follows from elementary considerations about what learning would have to preserve in order to continue producing new determinations. If the reader recognizes, in the result, something of the long tradition of post-Kantian reflection on the relation between formal thought and the categories of being, that recognition is welcome and in our view correct — but it does not ground the argument. The claim we defend is the weaker and more defensible one: the formal, examined closely enough, already carries the content that certain older traditions of philosophy have been treating under their own names. The distinction between the formal and the speculative is one of level of reflection, not of domain. What looks like a bridge between two regions turns out, on closer inspection, to be a single terrain seen at two different depths.
 
 ---
 
 ## References
-
-Agüera y Arcas, Blaise. "Do Large Language Models Understand Us?" *Daedalus* 151, no. 2 (Spring 2022): 183–97.
 
 Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" In *Proceedings of FAccT 2021*, 610–23. New York: Association for Computing Machinery, 2021.
 
@@ -258,23 +248,15 @@ Chalmers, David J. "Facing Up to the Problem of Consciousness." *Journal of Cons
 
 Chalmers, David J. *Reality+: Virtual Worlds and the Problems of Philosophy*. New York: W. W. Norton, 2022.
 
-Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. *Deep Learning*. Cambridge, MA: MIT Press, 2016.
-
-Hegel, G. W. F. *Phänomenologie des Geistes* (1807). English: *Phenomenology of Spirit*, trans. A. V. Miller. Oxford: Oxford University Press, 1977.
-
 Hegel, G. W. F. *Wissenschaft der Logik* (1812–16). English: *Science of Logic*, trans. George di Giovanni. Cambridge: Cambridge University Press, 2010.
-
-Hegel, G. W. F. *Enzyklopädie der philosophischen Wissenschaften im Grundrisse, Erster Teil: Die Wissenschaft der Logik* (1817/1830). English: *Encyclopedia of the Philosophical Sciences in Basic Outline, Part I: Science of Logic*, trans. Klaus Brinkmann and Daniel O. Dahlstrom. Cambridge: Cambridge University Press, 2010.
-
-Houlgate, Stephen. *The Opening of Hegel's Logic: From Being to Infinity*. West Lafayette, IN: Purdue University Press, 2006.
 
 Leylavergne, Elfège Arthur. *Une critique hégélienne de Hegel*. Doctoral dissertation, Université de Nantes, 2014. Published: Paris: Presses Académiques Francophones, 2016. ISBN 978-3-8416-3483-2.
 
-Mahowald, Kyle, Anna A. Ivanova, Idan A. Blank, Nancy Kanwisher, Joshua B. Tenenbaum, and Evelina Fedorenko. "Dissociating Language and Thought in Large Language Models." *Trends in Cognitive Sciences* 28, no. 6 (June 2024): 517–40.
+Pathak, Deepak, Pulkit Agrawal, Alexei A. Efros, and Trevor Darrell. "Curiosity-Driven Exploration by Self-Supervised Prediction." In *Proceedings of the 34th International Conference on Machine Learning*, 2778–87. ICML 2017.
 
 Pippin, Robert B. *Hegel's Realm of Shadows: Logic as Metaphysics in "The Science of Logic."* Chicago: University of Chicago Press, 2019.
 
-Shanahan, Murray. "Talking About Large Language Models." *Communications of the ACM* 67, no. 2 (February 2024): 68–79.
+Plato. *Sophist*. Trans. Nicholas P. White. In *Plato: Complete Works*, ed. John M. Cooper. Indianapolis: Hackett, 1997.
 
 Spinoza, Baruch de. *Ethica Ordine Geometrico Demonstrata* (1677). English: *Ethics*, trans. Edwin Curley, in *The Collected Works of Spinoza*, vol. 1. Princeton: Princeton University Press, 1985.
 
