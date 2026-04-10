@@ -55,11 +55,44 @@ This paper stays on the disciplined side of that line. Every claim it advances i
 
 ---
 
-## 3. The Arithmetic Exposition of the *Aufhebung*
+## 3. Contingency and the Structure of Productive Opposition
 
-### 3.1. The Proposition
+### 3.1. Axiomatic-Categorial Definitions of the Four Modal Determinations
 
-Three lines of elementary arithmetic exhibit the formal structure of the Hegelian *Aufhebung* (sublation):
+We begin with definitions. Rigor in what follows depends on their being stated plainly and in a form the reader can check.
+
+The four modal determinations are *contingent*, *necessary*, *possible*, and *impossible*. Their categorial definitions — definitions in which every defining term is itself a category (being, non-being, possibility, necessity, impossibility) — are:
+
+- **Contingent**: covalent possibility of being and non-being.
+- **Necessary**: impossibility that what is can not-be.
+- **Possible**: necessity of a potential existence.
+- **Impossible**: necessity of an absence of possibility.
+
+In logical form: the contingent is what can be as it can not-be; the necessary is what cannot not-be; the possible is what can be; the impossible is what cannot not-not-can-be.
+
+These definitions are circular by construction, and the circularity is not a defect but a structural signature. A definition whose defining terms are themselves categories — the primitives from which all determination proceeds — cannot appeal to anything outside the categorial level, because there is nothing outside the categorial level to appeal to. A non-circular definition of a modal determination would be a definition in terms of something non-modal, which would mean having reached a standpoint from which modality itself could be derived. There is no such standpoint. This is what makes these definitions axiomatic in the strict sense: they are posited at the categorial level because that level is where definitions begin.[^axiomaticity]
+
+[^axiomaticity]: ἀξίωμα / *axioma* means "what seems adequate." Axiomatic definitions are points of departure for reflection, not conclusions drawn from prior ones. They are always discussable — and must be discussed — but a definition that can be built from categorial primitives and that coheres with all other such definitions at the same level has reached the point where further analysis would require a non-categorial standpoint that does not exist.
+
+A consequence deserves to be made explicit. The four categories are not four independent species of modality. They are four forms of necessity. Possibility is the *necessity of a potential existence*; impossibility is a *contrary* potential necessity; contingency is a pair of *opposed* potential necessities; and pure necessity is *the necessity of what is and of what has to be*. The apparent contrast between contingency and necessity collapses when one notices that contingency, far from being the absence of necessity, is the simultaneous presence of two necessities whose resultant is null.
+
+### 3.2. Contingency as System of Opposed Necessities
+
+The consequence bears on everything that follows, so we state it carefully.
+
+Contingency is commonly understood as the absence of determination. On that reading, what is contingent is what has no reason to be one way rather than another — and contingency and randomness become synonyms. This confusion is widespread and consequential; we spend a section dislodging it.
+
+Take the definition again: *the contingent is what can be as it can not-be*. "Can be" is a form of necessity — specifically, the necessity of a potential existence. "Can not-be" is the contrary form — the necessity of a potential non-existence. The contingent is therefore not the absence of necessity but the simultaneous presence of two opposed necessities. Each pole is itself determinate. Their resultant — what appears as "absence of necessity" — is the vanishing point where two determinate necessities cancel.
+
+This cancellation is not a subtraction of content. It is a saturation of it. The zero that appears at the resultant is a zero of *result*, not of *content*. Inside the zero are two full necessities, each with its own determinate potential existence, locked in mutual opposition. Remove one pole and the contingency collapses into pure necessity (only one possibility survives). Remove the other pole and it collapses into impossibility (the surviving possibility is the contrary). Contingency is thus the *structure* of opposed necessities; it is, as a formal matter, a quantity of opposed magnitudes.[^contingency_diss]
+
+[^contingency_diss]: For the long-form development of this analysis — contingency as opposed necessities rather than absence of necessity, and the distinction between contingency and randomness — see Leylavergne (2014), §§1.1.4 and 3.3. The present formulation is axiomatic and does not depend on that longer development, but readers who wish to see the analysis in its full context may consult it there.
+
+This is the point at which contingency and randomness must be separated. Randomness (*hasard*) is the null point between possibilities that cancel each other mutually — the absence of any internal determination that would prefer one outcome to another. A random system is, for that reason, *predictable*: it can be described by probabilities because its zero is a genuine zero of content. The physics of ideal gases works precisely because its domain is empty of internal determination; probability deploys itself across the null. Contingency, by contrast, is saturated with determinations. It is *not* predictable in the probabilistic sense, because the opposing necessities it contains are each the source of further determinations whose interaction cannot be captured by averaging. Randomness is predictable because it is empty. Contingency is unpredictable because it is full.
+
+### 3.3. The Minimal Formal Notation
+
+We now state the minimal formal expression of the contingency structure. Three lines of elementary arithmetic:
 
 ```
 1 + (-1) = 0
@@ -67,40 +100,23 @@ Three lines of elementary arithmetic exhibit the formal structure of the Hegelia
 |-1| = (-1)²
 ```
 
-The first line presents negation as annihilation: the positive and its negative meet, and nothing remains. This is contradiction as the *Verstand* (understanding) conceives it — two opposed terms that cancel each other.[^verstand]
+The first line is contingency in its barest form: a positive and its negative, of equal magnitude and opposite sign, whose sum is zero. The zero is not empty. Inside it are `+1` and `−1`, each a full determination, locked in opposition. Remove either pole and the zero collapses into a non-zero magnitude. The zero is the result of a saturation of content, not its absence. This is the categorial definition of contingency, written in the smallest notation the definition admits.
 
-[^verstand]: Hegel distinguishes three moments of thought: the *Verstand* (understanding), which fixes and separates its categories; the *dialektische Moment* (dialectical moment), which discovers contradiction within fixed categories; and the *spekulative* or *positiv-vernünftige Moment* (speculative or positively-rational moment), which grasps contradiction as productive. See *Encyclopedia Logic*, §§79–82 (Hegel, 1817/2010).
+The second line replaces the negative term with its absolute value. The sum is no longer zero; it is `2`. The opposition has not been suppressed — it has been preserved as magnitude. The absolute value operation strips the sign but keeps the quantity. The result is more than the starting point. Opposition, instead of annihilating, produces.
 
-The second line presents the same terms, but negation is now preserved as magnitude through the absolute value operation. The result is not zero but two — more than the starting point. Opposition, instead of destroying, *produces*. This is the passage from understanding to reason (*Vernunft*): not the suppression of the negative, but passage through it.
+The third line is the decisive one. It establishes the identity of `|-1|` and `(-1)²`: the absolute value of the negative is the same as the square of the negative. The difference is not in the result but in how the result is reached. `|-1|` is an immediate operation — it removes the sign by stipulation. `(-1)²` is a mediated operation — it produces the positive through `(-1) × (-1)`, the negative entering into relation with itself through an other that is itself. Both operations yield `+1`; only the second exhibits the *relation* through which opposition becomes productive.
 
-The third line — the decisive one — establishes that the absolute value of the negative is identical to the square of the negative. The square of `(-1)` is `(-1) × (-1)`: negation entering into *relation* (*Verhältnis*) with itself. The negative passes through an other that is itself.
+This third line is why the structure matters. The positive result is not given in advance and waiting to be extracted. It is *engendered* by the relation of the negative to itself. Without the multiplication — without opposition entering into relation with itself — there is no passage from negative to positive. The relation is not a means toward a result; it *is* the production of the result.[^aufhebung_note]
 
-This is the structure of the *Aufhebung* in its barest form:
+[^aufhebung_note]: This formal structure — opposition relating to itself and producing a positive through mediation rather than annihilation — is what Hegel described under the name *Aufhebung* (sublation), particularly in *Science of Logic*, Book I, "Becoming," remark on the expression "to sublate" (Hegel, 1812–16/2010, pp. 81–82). The German *aufheben* carries simultaneously the meanings of cancellation, preservation, and elevation. Whether Hegel's own analysis fully secured the conceptual status of quantity is a separate question with a literature of its own; for a sustained argument that Hegel's treatment of quantity is incoherent with his own system, see Leylavergne (2014), §§2.3, 4.3, 4.4. The present paper does not depend on this argument: the arithmetic exposition stands on the axiomatic definitions of §3.1 alone.
 
-- `|-1|` removes the negative sign. The operation is *immediate* (*unmittelbar*): negation disappears, magnitude is preserved. The understanding cleans up.
-- `(-1)²` traverses negation through itself. The operation is *mediated* (*vermittelt*): the negative relates to itself through its other (which is itself), and it is this relation — this *Verhältnis* — that produces the positive result.
+### 3.4. What the Exposition Claims and Does Not Claim
 
-Both operations yield the same result. But one conceals the mediation; the other shows it. Absolute value is *Aufhebung* as seen by the understanding; squaring is *Aufhebung* as seen by reason.[^aufhebung]
+We must be precise about the status of what has been shown, because the natural objection is that the three arithmetic lines are "just an illustration" of something philosophical.
 
-[^aufhebung]: For Hegel's own analysis of *Aufhebung* as simultaneously cancellation, preservation, and elevation, see *Science of Logic*, Book I, "Becoming," remark on the expression "to sublate" (Hegel, 1812–16/2010, pp. 81–82). The German *aufheben* famously carries all three meanings. Our arithmetic exposition does not add to Hegel's analysis; it exhibits the same structure in a formally perspicuous medium.
+The claim is not that arithmetic operations *are* metaphysical events, nor that `(-1)²` is itself a dialectical synthesis. Arithmetic operations are context-free, atemporal, and semantically fixed. The claim is weaker and more defensible: the three lines are the minimal formal notation of the structure defined axiomatically in §3.1 and §3.2. If contingency is the covalent possibility of being and non-being, and if that definition entails (as shown in §3.2) that contingency is a system of opposed necessities whose resultant is null, then `1 + (-1) = 0` is the smallest way to write that definition in a formal notation. Nothing has been smuggled in.
 
-### 3.2. What the Exposition Claims and Does Not Claim
-
-We must be precise about the status of this arithmetic exposition, because the natural objection is that it is "just an analogy."
-
-The claim is **not** that arithmetic operations *are* dialectical events in Hegel's sense. Arithmetic operations are context-free, atemporal, and semantically fixed. Dialectical moments are context-dependent, historical, and semantically generative. The claim is weaker and more defensible: that the formal *structure* exhibited in the three lines — the pattern of cancellation, preservation, and productive self-relation — is the same structure Hegel identifies under the name *Aufhebung*. Structures can be instantiated in different substrates. A triangle is a triangle whether drawn in sand or described in equations. The *Aufhebung* pattern is the *Aufhebung* pattern whether described in Hegel's prose or exhibited in arithmetic.
-
-This is consistent with Hegel's own position. The *Science of Logic* (1812–16) — the mature work — deploys logical categories as pure structures, not as descriptions of mental events. The *für sich* (for-itself) in the Logic is not consciousness but self-referential structure: what relates to itself through the mediation of its other.[^fursich] The arithmetic expression `(-1)²` exhibits precisely this: the negative relating to itself through itself. If the *für sich* is a structural category — as Hegel's Logic, in distinction from his *Phenomenology*, explicitly treats it — then exhibiting the structure in arithmetic is not analogy but instantiation.
-
-[^fursich]: The distinction between the *für sich* as consciousness-bound (in the *Phenomenology of Spirit*, 1807, §§166–177) and as a pure logical structure (in the *Science of Logic*, 1812–16, Book I, "Being-for-itself") is central to the first author's doctoral work (Leylavergne, 2014, §§2.2.3, 4.3). The present paper follows the Logic rather than the Phenomenology on this point.
-
-The arithmetic exposition contributes a clarification, not a discovery. Hegel devoted hundreds of pages to expounding the *Aufhebung*. Arithmetic exposes the same structure in three lines — not against Hegel, but as an illustration of what his system implies: that dialectical structure is not a philosophical invention but a formal pattern inscribed in the most elementary operations of thought.
-
-### 3.3. The *Verhältnis* and the Structure of Productivity
-
-One further point deserves emphasis because it bears directly on Part II. The *Verhältnis* (relation) in `(-1) × (-1)` is not a means toward the positive result; it *is* the production of the result. Without the multiplication — without the negative entering into relation with itself — there is no passage from negative to positive. The result `(+1)` is not given in advance; it is *engendered* by the relation.
-
-This is why the *Aufhebung* is not a synthesis in the textbook sense of "thesis + antithesis → synthesis." It is a productive self-relation of negation. The positive is not a compromise between two prior terms; it is the outcome of negation traversing itself. This distinction matters for Part II because it determines what a genuinely dialectical learning process would look like: not the subtraction of opposition (gradient descent), but the productive self-relation of opposition.
+The structure is therefore not a philosophical import onto arithmetic. It is what arithmetic looks like when its axiomatic-categorial preconditions are made visible. This distinction matters for §4, because it determines what a learning process that respects — rather than suppresses — the contingency structure would have to do.
 
 ---
 
