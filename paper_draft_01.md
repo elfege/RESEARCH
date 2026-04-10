@@ -45,17 +45,11 @@ Throughout, we maintain an explicit methodological commitment: every claim is an
 
 ---
 
-## 2. Methodological Note: The Discipline of the Encounter
+## 2. Methodology
 
-Before proceeding, we state an explicit methodological commitment that governs everything that follows.
-
-Not all philosophical writing is of the same epistemic kind. Two modes can be distinguished. The first — call it *text disciplined by the living encounter* — produces claims that are anchored to something outside the text: a clinical observation, a reproducible experiment, a documented event, a philosophical argument whose premises are independently checkable. Lacan's seminars, tested against clinical practice; Freud's case studies, written from the couch; philosophical readings disciplined by historical events their authors were watching unfold — all are textual, but the text is tethered. The encounter is the ground of appeal.
-
-The second mode — call it *text freed from the encounter* — produces claims whose validity rests on internal coherence, rhetorical force, or creative reinterpretation of prior texts. Much of post-structuralist philosophy falls here by its own admission. The defense is that creative engagement is philosophically productive. The Platonist objection, which this paper adopts, is that what is produced is decoupled from any external test. Whatever its literary value, it is sophistry in Plato's precise sense: the production of speech untethered from the thing itself.[^plato_sophist]
+Philosophical writing divides into two kinds. The first is anchored to something outside the text that the reader can independently check: a posited axiom, a reproducible calculation, a documented event, an argument whose premises can be verified. The second is not — its validity rests on internal coherence or rhetorical force, and Plato named this *sophistry* in a precise technical sense: the production of speech untethered from the thing itself.[^plato_sophist] This paper is of the first kind. Every claim it advances is anchored to one of three sources: a posited axiomatic-categorial definition (§3), a reproducible mathematical operation (§3–§4), or a specific documented event (§5). Nothing else is required to evaluate it.
 
 [^plato_sophist]: Plato, *Sophist*, 268c–d. Citations by Stephanus numbers, standard across all editions. Widely available English translation in Cooper, John M., ed., *Plato: Complete Works*, Indianapolis: Hackett, 1997 (*Sophist* trans. Nicholas P. White).
-
-This paper stays on the disciplined side of that line. Every claim it advances is anchored to one of three things: a posited axiomatic-categorial definition (§3), a reproducible mathematical operation (§3–§4), or a specific documented event (§5). The reader can evaluate each claim by checking the axioms, performing the arithmetic, or examining the reported event. Nothing in the argument requires the reader to accept a framework outside these three sources. The reader who wants a metaphysical thesis will find none. The reader who wants academic neutrality on a charged topic will also find none: we take positions, defend them, and identify where the usual objections rest on assumptions that deserve retirement.
 
 ---
 
