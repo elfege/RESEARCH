@@ -3,3 +3,6 @@
 **/README_handoff*.md
 **/README_project_history*.md
 .claude/
+
+# Reference / scratch dirs — not part of the published repo
+_reference/
