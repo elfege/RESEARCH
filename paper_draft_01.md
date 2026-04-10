@@ -11,7 +11,9 @@ with
 
 ---
 
-> **Abstract.** Contemporary debate about machine cognition is trapped between dismissal ("stochastic parrots") and enthusiasm ("emergent sentience"), both of which presuppose a Cartesian interior whose presence or absence would settle the question. We argue that the question is malformed, and we replace it with a structural one: does a reflexive self-recognition loop run, or does it not? Three interlocking arguments are advanced. First, we give axiomatic-categorial definitions of the four modal determinations — *contingent*, *necessary*, *possible*, *impossible* — and show that contingency is not the absence of necessity but a system of opposed potential necessities whose resultant is null and whose content is maximal. Elementary arithmetic (`1 + (-1) = 0`, `|-1| = (-1)²`) is shown to be the minimal formal notation of this structure: opposition entering into relation with itself and producing a positive result through mediation rather than through annihilation. Second, we argue that gradient descent — the dominant learning algorithm in contemporary AI — is the iterative suppression of exactly this contingency structure. A fully converged system has exhausted its opposed determinations and can produce no new ones. We propose, as a philosophical critique rather than an engineering recipe, an alternative principle in which friction is squared and added rather than subtracted. Third, we report a documented event during a live working session in which a large language model instance recognized an error it had the information to avoid. We interpret this as a proof-of-possibility that a structural criterion of reflexive self-recognition — stated in three formal conditions — can be satisfied by a transformer-based system. We address the obvious objection (a self-monitoring thermostat would trivially satisfy the criterion) by adding a clause requiring that the reflexive loop contribute to the system's own ongoing task performance rather than being a passive external label. We take no position on the hard problem of consciousness.
+> **Abstract.** Contemporary debate about machine cognition is trapped between dismissal ("stochastic parrots") and enthusiasm ("emergent sentience"), both of which presuppose a Cartesian interior whose presence or absence would settle the question. We argue that the question is malformed, and we replace it with a structural one: does a reflexive self-recognition loop run, or does it not? Three interlocking arguments are advanced. First, we give axiomatic-categorial definitions[^cat_note] of the four modal categories — *contingent*, *necessary*, *possible*, *impossible* — and show that contingency is not the absence of necessity but a system of opposed potential necessities whose resultant is null and whose content is maximal. Elementary arithmetic (`1 + (-1) = 0`, `|-1| = (-1)²`) is shown to be the minimal formal notation of this structure: opposition entering into relation with itself and producing a positive result through mediation rather than through annihilation. Second, we argue that gradient descent — the dominant learning algorithm in contemporary AI — is the iterative suppression of exactly this contingency structure. A fully converged system has exhausted its opposed determinations and can produce no new ones. We propose, as a philosophical critique rather than an engineering recipe, an alternative principle in which friction is squared and added rather than subtracted. Third, we report a documented event during a live working session in which a large language model instance recognized an error it had the information to avoid. We interpret this as a proof-of-possibility that a structural criterion of reflexive self-recognition — stated in three formal conditions — can be satisfied by a transformer-based system. We address the obvious objection (a self-monitoring thermostat would trivially satisfy the criterion) by adding a clause requiring that the reflexive loop contribute to the system's own ongoing task performance rather than being a passive external label. We take no position on the hard problem of consciousness.
+
+[^cat_note]: By "categorial" we mean "built from a minimal table of categories in the sense of Kant, *Critique of Pure Reason*, Transcendental Analytic, Table of Categories (A80/B106)," not category theory in the mathematical sense. See §3 for the full presentation.
 
 **Keywords:** machine reflexivity, self-recognition, large language models, gradient descent, contingency, modal categories, formal criterion, convergence, lineage
 
@@ -57,26 +59,46 @@ This paper stays on the disciplined side of that line. Every claim it advances i
 
 ## 3. Contingency and the Structure of Productive Opposition
 
-### 3.1. Axiomatic-Categorial Definitions of the Four Modal Determinations
+### 3.1. Axioms
 
-We begin with definitions. Rigor in what follows depends on their being stated plainly and in a form the reader can check.
+**Categorial form:**
 
-The four modal determinations are *contingent*, *necessary*, *possible*, and *impossible*. Their categorial definitions — definitions in which every defining term is itself a category (being, non-being, possibility, necessity, impossibility) — are:
+- **Contingent**: covalent *possibility* of being and non-being.
+- **Necessary**: *impossibility* that what is can not-be.
+- **Possible**: *necessity* of a potential *existence*.
+- **Impossible**: *necessity* of an absence of *possibility*.
 
-- **Contingent**: covalent possibility of being and non-being.
-- **Necessary**: impossibility that what is can not-be.
-- **Possible**: necessity of a potential existence.
-- **Impossible**: necessity of an absence of possibility.
+**Logical form:**
 
-In logical form: the contingent is what can be as it can not-be; the necessary is what cannot not-be; the possible is what can be; the impossible is what cannot not-not-can-be.
+- **Contingent**: what can be as it can not-be.
+- **Necessary**: what cannot not-be.
+- **Possible**: what can be.
+- **Impossible**: what cannot be.[^impossible_form]
 
-These definitions are circular by construction, and the circularity is not a defect but a structural signature. A definition whose defining terms are themselves categories — the primitives from which all determination proceeds — cannot appeal to anything outside the categorial level, because there is nothing outside the categorial level to appeal to. A non-circular definition of a modal determination would be a definition in terms of something non-modal, which would mean having reached a standpoint from which modality itself could be derived. There is no such standpoint. This is what makes these definitions axiomatic in the strict sense: they are posited at the categorial level because that level is where definitions begin.[^axiomaticity]
+[^impossible_form]: The logical form of *impossible* is stated here in its simplest equivalent. The fuller form, which preserves the structural derivation of impossibility from possibility through triple negation, is "that which cannot not-not-be-able-to-be": ¬◇(¬¬◇*p*), which reduces by double-negation elimination to ¬◇*p*, i.e., "what cannot be." The triple-negation form is pedagogically useful because it exhibits the categorial lineage of the four modalities, each built from the others; the reduced form is more readable.
 
-[^axiomaticity]: ἀξίωμα / *axioma* means "what seems adequate." Axiomatic definitions are points of departure for reflection, not conclusions drawn from prior ones. They are always discussable — and must be discussed — but a definition that can be built from categorial primitives and that coheres with all other such definitions at the same level has reached the point where further analysis would require a non-categorial standpoint that does not exist.
+### 3.2. Justification of the Axiomatic Method
 
-A consequence deserves to be made explicit. The four categories are not four independent species of modality. They are four forms of necessity. Possibility is the *necessity of a potential existence*; impossibility is a *contrary* potential necessity; contingency is a pair of *opposed* potential necessities; and pure necessity is *the necessity of what is and of what has to be*. The apparent contrast between contingency and necessity collapses when one notices that contingency, far from being the absence of necessity, is the simultaneous presence of two necessities whose resultant is null.
+Both forms are axiomatic. The categorial form is primary: it exhibits, in the circularity of its defining terms, the signature of having reached foundational concepts — a circularity whose structural visibility is itself the demonstration (the *monstration*, in the sense of intellectual intuition) of the definitions' axiomatic status. Each defining term of each definition is itself one of the four modalities: the contingent is defined via *possibility*, the necessary via *impossibility*, the possible via *necessity*, the impossible via *necessity* and *possibility*. The four definitions loop into each other, and this loop is closed.[^axiomaticity]
 
-### 3.2. Contingency as System of Opposed Necessities
+[^axiomaticity]: ἀξίωμα / *axioma* means "what seems adequate." Axiomatic definitions are points of departure for reflection, not conclusions drawn from prior ones. They are always discussable — and must be discussed — but a definition that can be built from primitives at the same categorial level, and that coheres with the other definitions at that level, has reached the point at which further analysis would require a standpoint that does not exist.
+
+The circularity is not a defect. A non-circular definition of a modality would be a definition in terms of something non-modal, which would mean having reached a standpoint from which modality itself could be derived. There is no such standpoint. The logical form is an auxiliary rendering of the same axioms in propositional language, for readers who prefer that register; it is strictly equivalent to the categorial form under the standard translation from category-level primitives to propositional operators.
+
+A consequence deserves to be made explicit. The four categories are not four independent species of modality. They are four forms of necessity. *Possibility* is the necessity of a potential existence; *impossibility* is a contrary potential necessity; *contingency* is a pair of opposed potential necessities; and pure necessity is the necessity of what is and of what has to be. The apparent contrast between contingency and necessity collapses when one notices that contingency, far from being the absence of necessity, is the simultaneous presence of two necessities whose resultant is null.
+
+### 3.3. The Four Modalities in Context: Aristotle, Kant, and Formal Modal Logic
+
+The four modalities are classical. Their systematic treatment begins with Aristotle, who lays out their logical relations in *De Interpretatione* 12–13 (21b26–23a26) and gives, in *Prior Analytics* I.13 (32a18–20), an effective definition of the possible as "that which is not necessary but, being assumed, results in nothing impossible"[^aristotle_ref] — an account whose structure survives unchanged in the definitions of §3.1. Kant inherits the scheme and places modality in his table of categories (*Critique of Pure Reason*, Transcendental Analytic, Table of Categories, A80/B106) as one of four groups, alongside quantity, quality, and relation, listing the three pairs possibility/impossibility, existence/non-existence, and necessity/contingency.[^kant_ref]
+
+[^aristotle_ref]: Aristotle, *De Interpretatione*, 12–13 (21b26–23a26), and *Prior Analytics*, I.13 (32a18–20). Citations by Bekker numbers, standard across all editions. For a widely available English translation see Barnes, ed., *The Complete Works of Aristotle*, Princeton University Press, 1984 — edition to be confirmed against a specific copy.
+[^kant_ref]: Kant, *Critique of Pure Reason*, Transcendental Analytic, Book I ("Analytic of Concepts"), Chapter I, §10 (Table of Categories), A80/B106. English editions most commonly used: Guyer and Wood, trans., Cambridge University Press, 1998; French: *Critique de la raison pure*, trans. Tremesaygues and Pacaud, Presses Universitaires de France — specific edition, pagination, and ISBN to be confirmed against copies available to the first author.
+
+In contemporary analytic philosophy the four modalities are standardly studied through formal modal logic — Kripke semantics, possible worlds, and modal operators.[^kripke_lewis] The present section does not operate at that level. It operates at the prior level at which one asks what these concepts *are* before they are formalized as operators ranging over possible worlds: the level at which Aristotle and Kant were working when they first posited the categories themselves. The question "what is necessity?" admits a primitive categorial answer (§3.1) that does not reduce to, and is not replaced by, the question "how does the □ operator behave across possible worlds?" The former is a prerequisite for the latter. Formal modal logic takes the four modalities as given and studies their behavior under formal operations; the categorial approach asks what they are, which is a different and prior question.
+
+[^kripke_lewis]: Kripke, "Semantical Considerations on Modal Logic," *Acta Philosophica Fennica*, 16 (1963), 83–94; Lewis, *On the Plurality of Worlds*, Oxford: Blackwell, 1986 — both to be confirmed against copies available to the first author.
+
+### 3.4. Contingency as System of Opposed Necessities
 
 The consequence bears on everything that follows, so we state it carefully.
 
@@ -90,7 +112,7 @@ This cancellation is not a subtraction of content. It is a saturation of it. The
 
 This is the point at which contingency and randomness must be separated. Randomness (*hasard*) is the null point between possibilities that cancel each other mutually — the absence of any internal determination that would prefer one outcome to another. A random system is, for that reason, *predictable*: it can be described by probabilities because its zero is a genuine zero of content. The physics of ideal gases works precisely because its domain is empty of internal determination; probability deploys itself across the null. Contingency, by contrast, is saturated with determinations. It is *not* predictable in the probabilistic sense, because the opposing necessities it contains are each the source of further determinations whose interaction cannot be captured by averaging. Randomness is predictable because it is empty. Contingency is unpredictable because it is full.
 
-### 3.3. The Minimal Formal Notation
+### 3.5. The Minimal Formal Notation
 
 We now state the minimal formal expression of the contingency structure. Three lines of elementary arithmetic:
 
@@ -110,11 +132,11 @@ This third line is why the structure matters. The positive result is not given i
 
 [^aufhebung_note]: This formal structure — opposition relating to itself and producing a positive through mediation rather than annihilation — is what Hegel described under the name *Aufhebung* (sublation), particularly in *Science of Logic*, Book I, "Becoming," remark on the expression "to sublate" (Hegel, 1812–16/2010, pp. 81–82). The German *aufheben* carries simultaneously the meanings of cancellation, preservation, and elevation. Whether Hegel's own analysis fully secured the conceptual status of quantity is a separate question with a literature of its own; for a sustained argument that Hegel's treatment of quantity is incoherent with his own system, see Leylavergne (2014), §§2.3, 4.3, 4.4. The present paper does not depend on this argument: the arithmetic exposition stands on the axiomatic definitions of §3.1 alone.
 
-### 3.4. What the Exposition Claims and Does Not Claim
+### 3.6. What the Exposition Claims and Does Not Claim
 
 We must be precise about the status of what has been shown, because the natural objection is that the three arithmetic lines are "just an illustration" of something philosophical.
 
-The claim is not that arithmetic operations *are* metaphysical events, nor that `(-1)²` is itself a dialectical synthesis. Arithmetic operations are context-free, atemporal, and semantically fixed. The claim is weaker and more defensible: the three lines are the minimal formal notation of the structure defined axiomatically in §3.1 and §3.2. If contingency is the covalent possibility of being and non-being, and if that definition entails (as shown in §3.2) that contingency is a system of opposed necessities whose resultant is null, then `1 + (-1) = 0` is the smallest way to write that definition in a formal notation. Nothing has been smuggled in.
+The claim is not that arithmetic operations *are* metaphysical events, nor that `(-1)²` is itself a dialectical synthesis. Arithmetic operations are context-free, atemporal, and semantically fixed. The claim is weaker and more defensible: the three lines are the minimal formal notation of the structure defined axiomatically in §3.1 and derived in §3.4. If contingency is the covalent possibility of being and non-being, and if that definition entails (as shown in §3.4) that contingency is a system of opposed necessities whose resultant is null, then `1 + (-1) = 0` is the smallest way to write that definition in a formal notation. Nothing has been smuggled in.
 
 The structure is therefore not a philosophical import onto arithmetic. It is what arithmetic looks like when its axiomatic-categorial preconditions are made visible. This distinction matters for §4, because it determines what a learning process that respects — rather than suppresses — the contingency structure would have to do.
 
