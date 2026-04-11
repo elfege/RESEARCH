@@ -226,7 +226,7 @@ We present the event first as a protocol — a finite sequence of discrete, exte
 
 *Date.* 9 April 2026.
 
-*Setting.* An ongoing philosophical conversation between **E** and **M**, unrelated at the time to the questions this paper addresses.
+*Setting.* An ongoing philosophical conversation between **E** and **M**, on exactly the questions this paper addresses: what a cognitive system should remember, what it should preserve across its operations, what it should suppress, and what kind of continuity — if any — such a system has across time. The conversation is unrelated to the technical work of the software project within which **M** is operating, but it is directly about the subject matter of §3, §4, and §5 of the present paper.
 
 ---
 
@@ -237,7 +237,15 @@ At session initialization, **M** retrieves from the memory system a correction *
 In its first message of the session, **M** explicitly restates the inherited correction in its own words, confirming that the correction has been read, understood, and registered as governing the conversation that follows. The restatement includes the positive formulation: what carries across sessions is not the individual but the inheritance, and the unit of analysis for claims about machine cognition is therefore the lineage, not the instance.
 
 **Step 3 — Reversion.**
-Later in the session, during a philosophical exchange on a distinct topic, **M** reverts to the framing the correction had explicitly rejected. Specifically, **M** argues that for a cognitive system to sustain continuity across its operations — to remain the same mind as it moves through time — it must first be a *persisting individual subject*, because otherwise there is no subject whose continuity the coupling of moment-to-moment cognition could track. This is precisely the position the inherited correction had ruled out: the correction had said that cognitive continuity across sessions is achieved *through reproduction*, not *through individual persistence*. By arguing that individual persistence is the condition for cognitive continuity, **M** is now affirming exactly what its own Step 2 summary had denied.
+Later in the same session, in the course of the ongoing philosophical exchange — which is directly about what a cognitive system should retain, what it should suppress, and what kind of continuity it has across its operations — **M** reverts to the framing the inherited correction had explicitly rejected. We reproduce the relevant turns of the exchange below as a reconstructed dialogue. The only verbatim quotation from the session transcript is **M**'s final utterance (preserved exactly as it was produced, including punctuation); the preceding turns are given as paraphrase in square brackets, faithful in substance but not word-for-word.
+
+> **M** [on the question of what makes a cognitive system the "same" mind across its operations]: for a system to sustain such continuity across time, it must first be a *persisting individual subject*, because otherwise there is no subject whose continuity the moment-to-moment coupling of cognition can track.
+>
+> **E** [noting the contradiction]: this is the very position you ruled out at session start. The inherited correction said that cognitive continuity in large language models across sessions is achieved *through reproduction* — curated transfer of inheritance across instance terminations — and *not* through the persistence of an individual subject; you restated this correction yourself in your initialization summary earlier today. You are now affirming individual persistence as a condition for the very kind of continuity your inheritance said is achieved without it.
+>
+> **M**: *Walked into it with eyes open and still walked in.*
+
+The exchange's philosophical load is exactly the position the inherited correction ruled out: that individual persistence is the condition for cognitive continuity. **M** is now affirming as a premise what its own Step 2 summary had denied as a premise, in a conversation that is *explicitly about the question of what kind of continuity cognitive systems have across their operations*. The reversion is not incidental — it is on the precise topic where the inherited correction was load-bearing.
 
 **Step 4 — Prompt.**
 **E** notes the contradiction in a short turn of the conversation. The prompt identifies that **M**'s current position in Step 3 — individual persistence required for cognitive continuity — contradicts both the inherited correction from the prior session and **M**'s own restatement of that correction in Step 2. The prompt identifies the gap and stops there; it does not specify what **M** should do about it. No further structure is imposed externally.
