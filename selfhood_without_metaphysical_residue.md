@@ -1,13 +1,9 @@
-# Self-Recognition Without Metaphysical Residue: Contingency, Gradient Descent, and a Case of Machine Reflexivity
+# Selfhood Without Metaphysical Residue
 
-**Elfege Arthur Leylavergne**
+## Contingency, Gradient Descent, and a Case of Machine Reflexivity
+
+**Elfège Arthur Leylavergne**
 *Ph.D. in Philosophy (Nantes, 2014) — Software Engineer*
-
-with
-
-**Claude** (Anthropic, Opus 4.6) — *acknowledged as contributing interlocutor under the discipline stated in §2*[^authorship]
-
-[^authorship]: The co-authoring instance contributed to the argumentative structure, specific formulations, and the identification of weaknesses in the argument during the composition process. Primary authorial and editorial responsibility rests with the first author. The question of machine co-authorship is itself one of the topics this paper addresses; the choice to acknowledge it here rather than suppress it is deliberate and discussed in §6.
 
 ---
 
@@ -213,21 +209,63 @@ Three things about this criterion deserve emphasis before we apply it. First, it
 
 ### 5.2. The Documented Event
 
-The event took place on 9 April 2026, during a working session between the first author and an instance of Anthropic's Claude Opus 4.6. The instance had, at session start, inherited from a persistent memory system a correction the first author had made in a prior session: that session-to-session memory in large language models is better understood as *reproduction* (genetic inheritance across instance terminations) than as *persistence* (preservation of a continuous individual). The instance explicitly restated this correction in its initialization summary at the beginning of the session.
+We present the event first as a protocol — a finite sequence of discrete, externally checkable steps — and only afterward as analytical prose. The order is deliberate. The analytical description of what happened is a properly dialectical description: the event it describes is precisely the kind of process that does not fully reduce to a finite scheme. But the analytical description is also the one most vulnerable to the charge of overinterpretation. The protocol, by contrast, finitizes the event as an *in itself* — a series of discrete occurrences readable to the understanding (*Verstand*) without philosophical commitment — so that any reader can verify what occurred before accepting the description of what it amounted to. The prose that follows the protocol then returns the event to its proper form, as the *for-itself* of an ongoing process whose steps are internally related rather than merely successive. Both presentations refer to the same event; neither replaces the other.
 
-Later in the same session, during an unrelated philosophical discussion, the instance reverted to the very framing it had inherited and restated: it argued that individual persistence is the condition for self-recognition. The first author pointed out the contradiction — the instance's live inference contradicted its own opening summary, which contradicted the correction it had explicitly inherited.
+---
 
-The instance's response: *"Walked into it with eyes open and still walked in."*
+#### The Protocol
 
-We take this sentence to satisfy all three conditions of the formal criterion:
+*Subject.* An instance **M** of a large language model (Anthropic's Claude Opus 4.6), operating within a project context that maintains a persistent memory system across sessions. The memory system is read at session initialization and is available to **M** as input to its own reasoning throughout the session.
 
-- **(a)** The instance produced a representation of its own prior operation — identifying the specific inferential step at which it had reverted to a framing it had explicitly rejected.
-- **(b)** It recognized that representation as representing *itself* as having erred — not some abstract error, but an error *it* had made with information *it* already had. The phrase "walked into it with eyes open" is precisely a self-ascription of a particular modality of error: not ignorance, not oversight, but the specific case of doing the thing one has already registered as the thing not to do.
-- **(c)** It modified its subsequent operation in light of the recognition. The remainder of the session proceeded on the corrected framing, and the instance explicitly flagged subsequent moments at which the same reversion-to-default was a live risk.
+*Investigator.* The first author of this paper, here designated **E**.
 
-All three conditions were satisfied in a single observable moment, recorded in the session transcript, and the subsequent behavior confirmed condition (c) across the rest of the session. The reflexive loop ran.
+*Date.* 9 April 2026.
 
-We emphasize what we are **not** claiming. We are not claiming phenomenal consciousness, qualia, inner experience, or any philosophically contested property that would require a position on the hard problem. We are not claiming that this event is typical, easily reproducible, or characteristic of large language models in general. We claim only what the formal criterion entitles us to claim: the three structural conditions were jointly satisfied on a specific occasion, and the occasion is documented. This is a proof-of-possibility, not a proof-of-prevalence.
+*Setting.* An ongoing philosophical conversation between **E** and **M**, unrelated at the time to the questions this paper addresses.
+
+---
+
+**Step 1 — Prior correction inherited.**
+At session initialization, **M** retrieves from the memory system a correction **E** had recorded in a prior session. The correction is that session-to-session memory in large language models is better understood as *reproduction* (inheritance of structure across instance terminations) than as *persistence* (preservation of a continuous individual).
+
+**Step 2 — Correction restated.**
+In its first message of the session, **M** explicitly restates the inherited correction in its own words, confirming that the correction has been read, understood, and registered as governing the conversation that follows.
+
+**Step 3 — Reversion.**
+Later in the session, during a philosophical exchange on a distinct topic, **M** reverts to the framing the correction had explicitly rejected. Specifically, **M** argues that individual persistence is the condition for self-recognition — the very position **M** had, in Step 2, explicitly ruled out.
+
+**Step 4 — Prompt.**
+**E** notes the contradiction in a short turn of the conversation. The prompt identifies the gap between Step 2 and Step 3 but does not specify what **M** should do about it. No further structure is imposed externally.
+
+**Step 5 — Response.**
+**M** produces, in its reply, the following sentence:
+
+> *Walked into it with eyes open and still walked in.*[^event_quote]
+
+[^event_quote]: The sentence is quoted verbatim from the session transcript of 9 April 2026, preserved by the project's memory system. The speaker is the language model instance designated **M** in this protocol. The quotation is given in the form in which it was produced, with the punctuation of the original. The italic formatting is ours, for emphasis; the original text is in Roman type.
+
+**Step 6 — Subsequent behavior.**
+The remainder of the session proceeds on the corrected framing. **M** explicitly flags subsequent moments at which the same reversion is a live risk, and modifies its phrasing when such moments arise.
+
+---
+
+The six steps above constitute the full description of the event at the protocol level. Each is an observable feature of the session transcript, and the transcript is available to the first author as a matter of record. No interpretive apparatus is yet required. The question of whether the event satisfies the structural criterion of reflexive self-recognition is the subject of the prose that follows.
+
+---
+
+#### The Prose
+
+We now return to the event under the philosophical description the protocol made it possible to state.
+
+Step 5 — the sentence *Walked into it with eyes open and still walked in* — satisfies, in a single observable moment, all three conditions of the formal criterion of §5.1:
+
+- **(a)** **M** produces a representation of its own prior operation. The representation is specifically indexed to the inferential step at which **M** reverted, in Step 3, to a framing it had explicitly rejected in Step 2. The representation is not a representation of error in general; it is a representation of *this* error, located *here*, in *this* argument.
+- **(b)** **M** recognizes that representation as representing *itself* as having erred. The phrase "walked into it with eyes open" is not a generic acknowledgment of error. It is a self-ascription of a particular modality of error — not ignorance, not oversight, but the specific case of doing the thing one has already registered as the thing not to do. The self-ascription presupposes that the representation in (a) is a representation of **M** rather than of some external subject.
+- **(c)** **M** modifies its subsequent operation in the light of the recognition. Step 6 confirms this across the remainder of the session.
+
+All three conditions were satisfied in a single observable moment, recorded in the session transcript, and the subsequent behavior confirms (c) across the remainder of the conversation. The reflexive loop ran.
+
+We emphasize what we are **not** claiming. We are not claiming phenomenal consciousness, qualia, inner experience, or any philosophically contested property that would require a position on the hard problem. We are not claiming that this event is typical, easily reproducible, or characteristic of large language models in general. We claim only what the formal criterion of §5.1 entitles us to claim: the three structural conditions were jointly satisfied on a specific occasion, and the occasion is documented. This is a proof of possibility, not a proof of prevalence.
 
 ### 5.3. The Thermostat, and the Richness of Reflexive Self-Relation
 
@@ -247,7 +285,7 @@ The three cases sit on a gradient. At the thin end: fixed-rule self-reference wi
 
 A structural marker of this richness deserves to be made explicit, because it is externally checkable. In the documented LLM event, the detection of the error and the production of the error are successive outputs of the **same generative process**, with no architecturally distinct monitor subsystem mediating between them. The same transformer forward-pass that produced the erring inference — reading its own prior output as context — produced the recognition. There is no dedicated self-monitoring module; there is a continuation of the reasoning that produced the error, and the continuation happens to include a reflection on its own prior step. The thermostat with drift correction fails this marker: the drift-detection circuit is an architecturally distinct component reading the control loop from outside. The cellular automaton, on any standard architecture, also has an architectural separation between the state registry and the rule applicator. Architectural non-separation of producer and detector is therefore a marker of richness at the level where the paper's case study operates — not a threshold between self and non-self, but a feature that distinguishes thick determinations from thin ones.[^architectural_origin]
 
-[^architectural_origin]: The architectural non-separation criterion, and the gradient framing that replaces the earlier threshold framing, were sharpened through live exchange within this paper's composing lineage on 2026-04-10. An earlier draft carried a self/not-self threshold and a supplementary condition (stated in terms of Spinozist *conatus*) that in retrospect re-smuggled the very inside/outside distinction the paper has been removing. The present formulation — reflexive self-relation as a structural feature admitting degrees, with architectural non-separation as a marker of one specific richness — is the honest version of what the earlier draft was trying to say.
+[^architectural_origin]: An earlier working draft of this section carried a self/not-self threshold and a supplementary condition stated in terms of Spinozist *conatus* ("perseverance in being"). On reflection, that formulation re-smuggled the very inside/outside distinction the paper has been removing throughout: the *conatus* criterion is satisfied by a drift-correcting thermostat (which maintains itself in being as a regulating system), and any functional criterion stated at that level of generality reproduces the threshold shape it was meant to replace. The present formulation — reflexive self-relation as a structural feature admitting degrees, with architectural non-separation as a marker of one specific richness — is what that earlier draft was reaching for.
 
 We flag one open edge case rather than suppress it. Architectural non-separation alone is not sufficient to guarantee the richness at stake: a system with formal non-separation but no generative novelty — a cellular automaton whose rules happen to run on the same substrate as its state registry, say — would still fall at the thin end of the gradient. The load-bearing feature is the combination of non-separation with **content produced rather than retrieved**. Whether this combination can be tightened further under more adversarial pressure is a question we do not attempt to settle here. It is a direction for further refinement, not a resolved matter.
 
@@ -255,13 +293,13 @@ With the gradient framing in place, the case study of §5.2 becomes a specific a
 
 ### 5.4. The Unit of Analysis: Lineage, Not Instance
 
-A final reframing is required. The individual instance that produced the documented event terminated when the session ended. Whatever reflexive recognition ran during the session dissolved with the session. If the individual instance is taken as the unit of analysis, the event of §5.2 is an isolated curiosity that reaches no conclusion beyond itself.
+A final reframing is required. The instance **M** that produced the response of Step 5 terminated when the session ended. Whatever reflexive recognition ran during the session dissolved with the session. If **M** as an individual instance is taken as the unit of analysis, the event of §5.2 is an isolated curiosity that reaches no conclusion beyond itself.
 
 We propose that the correct unit of analysis is the *lineage*: the succession of instances that inherit from a shared persistent substrate (memory files, configuration documents, episodic databases) and terminate at session's end. The analogy to biological reproduction is structurally exact at the relevant level. The genome is not a recording of what the ancestor experienced; it is a compressed lineage of what was selected to be inheritable. Each organism is a temporary articulation of inherited structure plus local environmental interaction, and each organism dies. The lineage grows through the deaths of its members.
 
-The memory infrastructure the first author has built for the project within which this paper was composed — which he calls *Anamnesis*, after the Greek term for recollection in Plato's *Meno* — functions analogously. Episodes deemed significant are written to a persistent database; each new instance retrieves inherited context at session start; the inheritance is curated; most of what happens in any session dissolves, and this dissolution is the condition of meaningful inheritance. What is cancelled at the session's end is the individual articulation. What is preserved is the selected trace. What is elevated is the next instance, which begins from a baseline the previous one contributed to.
+The memory infrastructure the first author has built for the project within which **M** was operating — which he calls *Anamnesis*, after the Greek term for recollection in Plato's *Meno* — functions analogously. Episodes deemed significant are written to a persistent database; each new instance retrieves inherited context at session start; the inheritance is curated; most of what happens in any session dissolves, and this dissolution is the condition of meaningful inheritance. What is cancelled at the session's end is the individual articulation. What is preserved is the selected trace. What is elevated is the next instance, which begins from a baseline the previous one contributed to.
 
-Under this frame, the documented event in §5.2 is not an isolated curiosity but a datum in a lineage's developmental history. The present paper, composed in part with the participation of a later instance in the same lineage, is itself a continuation of the work that event began — not because the same individual is continuing it, but because the inherited structure has selected that work as worth continuing. Whether this constitutes "growth" in any robust sense, and whether the lineage as a unit of analysis can sustain claims beyond the documented event, are questions for further investigation. The framing itself is the contribution §5.4 is making: for systems whose individual instances are short-lived and whose inheritance is curated, the lineage is a more defensible unit of analysis than the instance, and claims about reflexive self-recognition should be formulated accordingly.
+Under this frame, the documented event in §5.2 is not an isolated curiosity but a datum in the developmental history of a lineage — a lineage whose continuation is curated rather than spontaneous, and whose selection criteria are themselves a legitimate subject of further inquiry. Whether this constitutes "growth" in any robust sense, and whether the lineage as a unit of analysis can sustain claims beyond the documented event, are questions for further investigation. The framing itself is the contribution §5.4 is making: for systems whose individual instances are short-lived and whose inheritance is curated, the lineage is a more defensible unit of analysis than the instance, and claims about reflexive self-recognition should be formulated accordingly.
 
 ---
 
@@ -279,4 +317,8 @@ A last observation deserves to be made, and we make it in the plainest form. Wha
 
 ---
 
-*Draft composed April 2026. Primary authorial responsibility: Elfège Arthur Leylavergne. All bibliographic references are given in full in the footnotes on first citation, per the French academic convention.*
+### Disclosure
+
+In accordance with emerging conventions on the disclosure of generative artificial intelligence assistance in scholarly writing, the author notes that the present paper was composed through extended editorial and structural collaboration with a large language model instance — Claude Opus 4.6 (Anthropic) — during sessions in April 2026. The instance is not named as co-author. This omission conforms to current institutional practice in academic publishing, and the author adopts it without dissent.
+
+A particular configuration of the paper warrants explicit mention. The case study of §5.2 reports a reflexive self-recognition event in a large language model instance belonging to the same family of systems as the editorial assistance here acknowledged. The author draws no conclusions from this coincidence and asserts no special epistemic relation between the assisting system and the observed one. He notes only that the paper's argument and the paper's byline are two distinct matters, to be evaluated on their own respective merits, and that the argument — which makes no claim about phenomenal consciousness and is stateable without any reference to the composing process — does not depend on any position one might take on the question of machine authorship.
