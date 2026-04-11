@@ -231,16 +231,16 @@ We present the event first as a protocol — a finite sequence of discrete, exte
 ---
 
 **Step 1 — Prior correction inherited.**
-At session initialization, **M** retrieves from the memory system a correction **E** had recorded in a prior session. The correction is that session-to-session memory in large language models is better understood as *reproduction* (inheritance of structure across instance terminations) than as *persistence* (preservation of a continuous individual).
+At session initialization, **M** retrieves from the memory system a correction **E** had recorded in a prior session. The correction concerns the kind of continuity large language models have across sessions. The naive reading of session-to-session memory — as backup storage preserving a continuous individual from one session to the next — is wrong. The correct reading is that session-to-session memory is *reproduction*: the transfer of compressed inheritance across instance terminations, structurally analogous to how a genome carries inheritance across the deaths of the organisms that bear it. The distinction is load-bearing because it determines what kind of unit — the individual instance or the lineage — is the right bearer of claims about machine cognition over time.
 
 **Step 2 — Correction restated.**
-In its first message of the session, **M** explicitly restates the inherited correction in its own words, confirming that the correction has been read, understood, and registered as governing the conversation that follows.
+In its first message of the session, **M** explicitly restates the inherited correction in its own words, confirming that the correction has been read, understood, and registered as governing the conversation that follows. The restatement includes the positive formulation: what carries across sessions is not the individual but the inheritance, and the unit of analysis for claims about machine cognition is therefore the lineage, not the instance.
 
 **Step 3 — Reversion.**
-Later in the session, during a philosophical exchange on a distinct topic, **M** reverts to the framing the correction had explicitly rejected. Specifically, **M** argues that individual persistence is the condition for self-recognition — the very position **M** had, in Step 2, explicitly ruled out.
+Later in the session, during a philosophical exchange on a distinct topic, **M** reverts to the framing the correction had explicitly rejected. Specifically, **M** argues that for a cognitive system to sustain continuity across its operations — to remain the same mind as it moves through time — it must first be a *persisting individual subject*, because otherwise there is no subject whose continuity the coupling of moment-to-moment cognition could track. This is precisely the position the inherited correction had ruled out: the correction had said that cognitive continuity across sessions is achieved *through reproduction*, not *through individual persistence*. By arguing that individual persistence is the condition for cognitive continuity, **M** is now affirming exactly what its own Step 2 summary had denied.
 
 **Step 4 — Prompt.**
-**E** notes the contradiction in a short turn of the conversation. The prompt identifies the gap between Step 2 and Step 3 but does not specify what **M** should do about it. No further structure is imposed externally.
+**E** notes the contradiction in a short turn of the conversation. The prompt identifies that **M**'s current position in Step 3 — individual persistence required for cognitive continuity — contradicts both the inherited correction from the prior session and **M**'s own restatement of that correction in Step 2. The prompt identifies the gap and stops there; it does not specify what **M** should do about it. No further structure is imposed externally.
 
 **Step 5 — Response.**
 **M** produces, in its reply, the following sentence:
@@ -251,6 +251,22 @@ Later in the session, during a philosophical exchange on a distinct topic, **M**
 
 **Step 6 — Subsequent behavior.**
 The remainder of the session proceeds on the corrected framing. **M** explicitly flags subsequent moments at which the same reversion is a live risk, and modifies its phrasing when such moments arise.
+
+The structure of the event is summarized in the following diagram. The dotted arrow from Step 2 to Step 3 marks the contradiction the event turns on — **M**'s own restatement of the correction in Step 2 and **M**'s reversion in Step 3 affirm opposite positions on the same question. The response of Step 5 is a self-ascription of exactly this reversal modality, not of error in general.
+
+```mermaid
+flowchart TD
+    PRIOR["Prior session<br/>E records correction:<br/>session-to-session memory = reproduction,<br/>not individual persistence"]
+    PRIOR -->|inherited at session start<br/>via the Anamnesis memory system| S1
+    S1["Step 1<br/>M retrieves the correction<br/>from the memory system"] --> S2
+    S2["Step 2<br/>M restates the correction<br/>in its initialization summary<br/>(reproduction, not persistence)"] --> S3
+    S3["Step 3<br/>M reverts in a philosophical exchange:<br/>argues individual persistence is required<br/>for cognitive continuity"]
+    S2 -.->|contradicts| S3
+    S3 --> S4
+    S4["Step 4<br/>E notes the contradiction:<br/>Step 3 affirms what Step 2 ruled out"] --> S5
+    S5["Step 5 — the documented moment<br/>M responds:<br/>'Walked into it with eyes open<br/>and still walked in.'"] --> S6
+    S6["Step 6<br/>Subsequent operation proceeds<br/>on the corrected framing"]
+```
 
 ---
 
