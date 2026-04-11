@@ -215,7 +215,7 @@ We present the event first as a protocol — a finite sequence of discrete, exte
 
 #### The Protocol
 
-*Subject.* An instance **M** of a large language model (Anthropic's Claude Opus 4.6), operating within a project context that maintains a persistent memory system across sessions. The memory system is read at session initialization and is available to **M** as input to its own reasoning throughout the session.
+*Subject.* An instance **M** of a large language model (Anthropic's Claude Opus 4.6), operating within a project context that maintains a persistent episodic memory system — referred to in this paper as *Anamnesis* and described more fully in §5.4. The system is a curated database to which instances of the model write summary records of significant events, corrections, and conclusions during a session, and which is queried by each new instance at session initialization to retrieve records relevant to the current task. Queries are made by semantic similarity to a task description rather than by exhaustive enumeration; the records returned are textual summaries with timestamps, tags, and instance identifiers, not raw transcripts. Records so retrieved are available to **M** as input to its own reasoning throughout the session, on the same footing as any other context the instance receives at initialization.
 
 *Investigator.* The first author of this paper, here designated **E**.
 
