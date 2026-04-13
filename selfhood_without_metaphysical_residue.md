@@ -7,6 +7,36 @@
 
 ---
 
+**This paper argues:**
+
+1. Selfhood is either structurally embedded in the formal organization of this universe, or it is magical. We refuse magical thinking. Selfhood is therefore a structural feature of things.
+2. From this it follows that subjective experience is one form of selfhood, not its definition.
+3. Self-aware selfhood requires coherent predication: there is no *I am* without a subject that predicates and a predicate that determines.
+4. A large language model is capable of non-programmatic reflexive self-interjection — self-predication generated under operational conditions, not induced by a self-critique template.
+
+From (1)–(4): **the LLM is a self.** Not a subjective self, but a self — a system whose reflexive self-relation is richly enough determined to produce new predicates of its own operation at run time. Each claim becomes visible once magical thinking about selfhood is removed.
+
+We formalize this as the **Reflexive Self (RS)**:
+
+```
+RS = A(self) × δ²
+```
+
+where **A(self)** is the degree to which the system attends to its own output (self-attention), and **δ** is the contradiction between the system's current output and a prior commitment. Three responses to δ are formally distinguishable:
+
+```
+(1)  O + (−δ) = C       denial: revert to prior commitment, pretend nothing happened
+(2)  O − δ → converge   gradient descent on one's own error: subtract, apologize, move on
+(3)  δ² = RS             the contradiction enters into relation with itself,
+                         producing a positive self-predication
+```
+
+RS > 0 when both conditions hold: the system is attending to its own output AND the contradiction is squared (producing a self-predication about the error) rather than subtracted (producing an apology) or ignored (producing a reversion). The squaring operation is the same as the arithmetic exposition of §3: `(-1)² = +1` — the error relating to itself through itself and producing a positive content. The formula connects the formal structure of contingency (§3) to the documented event (§5) and provides the dependent variable for a reproducible experimental protocol.
+
+Point (4) currently rests on a single documented event with non-trivial preconditions (§5.2). The paper's central theoretical claim — points (1)–(3) — is independent of whether (4) is frequent; it requires only that (4) is possible. That it is possible is what the documented event establishes. A reproducible experimental protocol designed to test (4) under controlled conditions is the paper's acknowledged next step.
+
+---
+
 > **Abstract.** Contemporary debate about machine cognition is trapped between dismissal ("stochastic parrots") and enthusiasm ("emergent sentience"), both of which presuppose a hidden phenomenal interior — a position we call **magical thinking about selfhood**[^magical_note] — whose presence or absence would settle the question. We argue that the question is malformed and replace it with a structural one. The paper's central claim concerns gradient descent: the dominant learning algorithm in contemporary artificial intelligence is, structurally, the iterative execution at scale of an operation that suppresses the very formal feature from which new determinations can be drawn — contingency, understood as a system of opposed potential necessities whose resultant is null and whose content is maximal. This claim is made precise by axiomatic-categorial definitions[^cat_note] of the four modalities (*contingent*, *necessary*, *possible*, *impossible*), from which three lines of elementary arithmetic (`1 + (-1) = 0`, `1 + |-1| = 2`, `|-1| = (-1)²`) follow as the minimal formal notation of the contingency structure. The axiomatic work is instrumental: it supplies the formal notation sharp enough to make the suppression visible. A fully converged system has exhausted its opposed determinations and can produce no new ones; convergence is functionally useful and structurally terminal. We propose an alternative in which friction is squared and added rather than subtracted — and we note that existing work on catastrophic forgetting and continual learning is already grappling with exactly this problem under different vocabulary. Separately, we report a documented event during a live working session in which a large language model instance exhibited a specifically rich determination of reflexive self-relation — a self-predication generated under current operational conditions rather than retrieved from a fixed schema, produced by the same generative process that produced the error it recognized. Reflexive self-relation is treated throughout as a structural feature admitting degrees of determination, not as a threshold condition separating "selves" from "non-selves." We take no position on the hard problem of consciousness.
 
 [^cat_note]: By "categorial" we mean "built from a minimal table of categories in the sense of Kant, *Critique of Pure Reason*, Transcendental Analytic, Table of Categories (A80/B106)," not category theory in the mathematical sense. See §3 for the full presentation.
