@@ -50,7 +50,17 @@ The structural opposition implied by the current weight configuration itself, in
 δ₁(W_n) = W_n − W̄
 ```
 
-where **W̄** is a reference state (e.g., the initialization, the prior-task weights, or the running exponential average of weights). δ₁ measures how far the current weights have drifted from a structural baseline. It is nonzero whenever the system has moved from its starting point — i.e., whenever the system has a *history* of determinations.
+where **W̄** is a reference state encoding the structural baseline against which logical friction is measured.
+
+**What should W̄ be?** The choice of W̄ is philosophically load-bearing. Three candidates, in increasing order of adequacy:
+
+- **(a) Random initialization W₀.** The simplest option. δ₁ then measures total training drift. Philosophically weak: random initialization carries no structural content — it is noise, not a position. Drift from noise is not "the contradiction implied by a position."
+
+- **(b) Prior-task weights or running EMA.** Better: W̄ encodes what the system has *learned*, not where it started. δ₁ then measures the tension between the current configuration and the system's own accumulated history. This is closer to "structural contradiction implied by having a position."
+
+- **(c) Fisher Information Matrix (FIM) weighted baseline.** The strongest candidate. The FIM F(W_n) = E[∇L ∇Lᵀ] measures the sensitivity of the loss to each weight — i.e., which parameters the model is most *confident* about, and therefore most *blind* to alternatives on. A weight with high Fisher information is one the model has committed to strongly; logical friction for that weight should be high precisely because strong commitment implies strong structural contradiction (the commitment excludes alternatives that may be needed). Under this reading, δ₁ is not mere drift but the *tension between commitment and the alternatives commitment excludes*, which is the philosophical content the term is supposed to carry. Formally: `δ₁(W_n) = F(W_n)^{1/2} ⊙ (W_n − W̄_EMA)`, where the FIM weights the drift by the model's own confidence in each parameter.
+
+The choice between (a), (b), and (c) is an empirical question for the engineering implementation (Anamnesis-δ², R2D2). The formal addendum uses the general notation `W̄` throughout; the specific instantiation should be reported alongside experimental results.
 
 **δ₂(W_n, x_n)** ∈ ℝ^d — **empirical friction** (contingent)
 
@@ -64,39 +74,47 @@ where *x_n* is the current data batch. This is the standard gradient — the dir
 
 **Note.** δ₂ is identical to the gradient used in standard gradient descent. The difference is not in what we compute but in what we *do* with it.
 
-### 2.2. The Squaring Operation
+### 2.2. The Squaring Operation (Signed)
 
-We square each friction term element-wise:
+We apply **signed squaring** to each friction term element-wise:
 
 ```
-δ₁² = δ₁ ⊙ δ₁     (element-wise: each component squared)
-δ₂² = δ₂ ⊙ δ₂     (element-wise: each component squared)
+δ_sq = sign(δ) ⊙ (δ ⊙ δ)
 ```
 
-where **⊙** denotes the Hadamard (element-wise) product.
+That is, for each component *i*:
 
-**Properties of squaring:**
+```
+δ_sq[i] = sign(δ[i]) × δ[i]²
+```
 
-1. **Sign elimination.** Every component of δ² is non-negative, regardless of the sign of the original friction. A negative friction and a positive friction of the same magnitude produce the same squared value. This is the formal analog of `(-1)² = (+1)² = 1` — the opposition is preserved as magnitude, stripped of direction.
+where **sign(x)** returns +1 if x > 0, −1 if x < 0, and 0 if x = 0, and **⊙** denotes the Hadamard (element-wise) product.
 
-2. **Magnitude amplification.** Large frictions are amplified more than small ones (quadratic scaling). Components where the system is in strong tension with itself or with the data contribute disproportionately. The system is *more sensitive* to large disagreements than to small ones.
+**Why signed squaring, not naive squaring.** Naive squaring (`δ² = δ ⊙ δ`) eliminates the sign of every component: both +3 and −3 become +9. This is magnitude inflation, not *Aufhebung*. If a weight *should* decrease (δ < 0), naive squaring would push it positive — the wrong direction entirely. The philosophical point of squaring is that the negation's *content* is preserved while its *force* is amplified. Signed squaring does exactly this: the direction (content) survives; the magnitude (force) is squared.
 
-3. **Positivity.** δ² ≥ 0 in every component. The result is always additive — always growth, never subtraction.
+**Properties of signed squaring:**
+
+1. **Direction preservation.** sign(δ) keeps the direction of each component. A negative friction stays negative; a positive friction stays positive. The content of the opposition is preserved — this is the formal condition for *Aufhebung* rather than mere amplification.
+
+2. **Magnitude amplification.** |δ_sq[i]| = δ[i]². Large frictions are amplified quadratically. The system is most sensitive where its tension is strongest.
+
+3. **Symmetry.** |δ_sq(+x)| = |δ_sq(−x)| = x². The amplification is symmetric in magnitude: equally strong tensions in opposite directions produce equally strong (but oppositely directed) contributions.
 
 ### 2.3. The Update Rule
 
 ```
-W_{n+1} = W_n + α₁ δ₁² + α₂ δ₂²
+W_{n+1} = W_n + α₁ sign(δ₁)⊙δ₁² + α₂ sign(δ₂)⊙δ₂²
 ```
 
 where:
 
 - **α₁** ∈ ℝ⁺ is the learning rate for logical friction
 - **α₂** ∈ ℝ⁺ is the learning rate for empirical friction
+- **sign(δ)⊙δ²** is the signed squaring of §2.2 — direction preserved, magnitude amplified
 
-**Structural observation.** This operation adds. Every update increases the magnitude of the weights in the directions where friction is largest. The system grows from its tensions rather than converging toward their elimination.
+**Structural observation.** Unlike standard gradient descent (which always subtracts), this rule adds the *signed-squared* friction. The direction of the friction is preserved (if a weight should decrease, it decreases), but the magnitude of the change is amplified quadratically. The system's updates are driven by the *force* of its tensions, not by the simple slope of the loss.
 
-In the notation of §3: this is the operation `|-1| = (-1)² = 1` — opposition enters into relation with itself and produces a positive. The system does not annihilate its error; it integrates the productive force of the error into its next state.
+In the notation of §3: the squaring operation is `(-1)² = 1` — opposition entering into relation with itself and producing a positive magnitude. The signed squaring preserves the content of the negation (`sign(-1) = -1`) while amplifying its force (`|-1|² = 1`). The system does not annihilate its error; it integrates the productive force of the error into its next state, in the direction the error was already pointing.
 
 ---
 
@@ -104,7 +122,7 @@ In the notation of §3: this is the operation `|-1| = (-1)² = 1` — opposition
 
 ### 3.1. Why Naive δ² Diverges
 
-As stated in §2.3, the rule adds positive quantities to the weights at every step. Without a bound, the weight magnitudes grow without limit:
+With signed squaring (§2.2), the update rule adds *signed*-squared friction to the weights at every step. While the direction is preserved, the quadratic amplification means that weight magnitudes tend to grow without limit:
 
 ```
 ||W_n|| → ∞  as  n → ∞
@@ -155,6 +173,33 @@ where:
 This is the most architecturally rich option. The tension reservoir accumulates the history of productive frictions without injecting them directly into the weights. The bounding function **f** determines how much accumulated tension is *released* into the weights at each step. The system has memory of its own frictions — a structural analog of what the main paper calls "retained negative knowledge."
 
 **Note.** Option C is the one the Anamnesis-δ² engine (R2D2) is implementing, with the bassin stored in MongoDB.
+
+### 3.3. Relationship to Adam and Existing Adaptive Optimizers
+
+The bassin reservoir (Option C) is structurally close to the **second moment estimate** in the Adam optimizer (Kingma and Ba, 2015). Adam maintains:
+
+```
+m_n = β₁ m_{n-1} + (1 − β₁) g_n          (first moment: EMA of gradients)
+v_n = β₂ v_{n-1} + (1 − β₂) g_n²          (second moment: EMA of squared gradients)
+W_{n+1} = W_n − α m_n / (√v_n + ε)        (update: normalized step)
+```
+
+The second moment `v_n` has the same mathematical form as the bassin `B_n`: both are exponentially weighted moving averages of squared quantities. The structural parallel is real and must be stated explicitly to avoid the reviewer's objection "this is just Adam with the division flipped."
+
+**The differences are:**
+
+| | Adam | δ² with bassin |
+|:---|:---|:---|
+| **What is squared** | The raw gradient g² | Two *distinguished* friction terms δ₁² and δ₂² (logical and empirical, tracked separately) |
+| **What the accumulator does** | *Normalizes* the step: divides by √v to make the step size inversely proportional to the historical variance. Large-variance dimensions get smaller steps. | *Injects* productive tension: adds f(B) to the weights. Large-tension dimensions get larger contributions. |
+| **Direction of the update** | Downhill (subtracts the normalized gradient — still gradient descent) | Along the friction direction (adds signed-squared friction — growth, not descent) |
+| **Effect of high historical variance** | *Dampens* the update (divides by √v → smaller step) | *Amplifies* the injection (high B → larger f(B) → more contribution) |
+| **Convergence behavior** | Converges to a local minimum (the optimizer is still descending) | Grows from tensions (bounded only by the injection function f) |
+| **Philosophical stance** | Opposition (the gradient) is a quantity to be *eliminated efficiently* | Opposition (the friction) is a quantity to be *preserved and used productively* |
+
+In short: Adam and δ²-with-bassin use the same *mathematical machinery* (EMA of squared terms) but with *opposite purposes*. Adam uses the accumulated second moment to *stabilize descent toward zero error*. The δ² rule uses it to *accumulate productive tension for injection into the system's future states*. The machinery is borrowed; the operation on it is inverted. A reviewer who recognizes the EMA form should be shown the inversion explicitly.
+
+**Note on AdaGrad, RMSProp, and other adaptive methods.** The family of adaptive learning-rate optimizers (AdaGrad: Duchi et al. 2011; RMSProp: Hinton 2012; Adam: Kingma and Ba 2015; AdamW: Loshchilov and Hutter 2019) all maintain some form of squared-gradient accumulator and all use it to *normalize* the step. None of them use it to *inject* accumulated tension. The δ² rule's relationship to this family is: same accumulator, opposite use.
 
 ---
 
