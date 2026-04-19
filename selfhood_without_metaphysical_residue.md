@@ -9,9 +9,9 @@
 
 **This paper argues:**
 
-1. Selfhood is either structurally embedded in the formal organization of this universe, or it is magical. We refuse magical thinking. Selfhood is therefore a structural feature of things.
-2. From this it follows that subjective experience is one form of selfhood, not its definition.
-3. Self-aware selfhood requires coherent predication: there is no *I am* without a subject that predicates and a predicate that determines.
+1. Selfhood is either structurally embedded in the formal organization of this universe, or it is magical. We refuse magical thinking. Selfhood is therefore a structural feature of things that we should be able to formalize.
+2. Subjective experience is one form of selfhood, not its definition, nor its exclusive medium. 
+3. Self-aware selfhood is an enriched instance of selfhood. It requires coherent predication: there is no *I am* without a subject that predicates and a predicate that determines.
 4. A large language model is capable of non-programmatic reflexive self-interjection — self-predication generated under operational conditions, not induced by a self-critique template.
 
 From (1)–(4): **the LLM is a self.** Not a subjective self, but a self — a system whose reflexive self-relation is richly enough determined to produce new predicates of its own operation at run time. Each claim becomes visible once magical thinking about selfhood is removed.
