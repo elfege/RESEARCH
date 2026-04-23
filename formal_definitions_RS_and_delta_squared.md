@@ -90,11 +90,11 @@ That is, for each component *i*:
 
 where **sign(x)** returns +1 if x > 0, −1 if x < 0, and 0 if x = 0, and **⊙** denotes the Hadamard (element-wise) product.
 
-**Why signed squaring, not naive squaring.** Naive squaring (`δ² = δ ⊙ δ`) eliminates the sign of every component: both +3 and −3 become +9. This is magnitude inflation, not *Aufhebung*. If a weight *should* decrease (δ < 0), naive squaring would push it positive — the wrong direction entirely. The philosophical point of squaring is that the negation's *content* is preserved while its *force* is amplified. Signed squaring does exactly this: the direction (content) survives; the magnitude (force) is squared.
+**Why signed squaring, not naive squaring.** Naive squaring (`δ² = δ ⊙ δ`) eliminates the sign of every component: both +3 and −3 become +9. This is magnitude inflation, not selective retention. If a weight *should* decrease (δ < 0), naive squaring would push it positive — the wrong direction entirely. The point of squaring is that the friction's *direction* is preserved while its *magnitude* is amplified. Signed squaring does exactly this: the direction (content of the friction) survives; the magnitude (force of the friction) is squared.
 
 **Properties of signed squaring:**
 
-1. **Direction preservation.** sign(δ) keeps the direction of each component. A negative friction stays negative; a positive friction stays positive. The content of the opposition is preserved — this is the formal condition for *Aufhebung* rather than mere amplification.
+1. **Direction preservation.** sign(δ) keeps the direction of each component. A negative friction stays negative; a positive friction stays positive. The content of the friction is preserved — this is the formal condition for selective retention rather than mere amplification.
 
 2. **Magnitude amplification.** |δ_sq[i]| = δ[i]². Large frictions are amplified quadratically. The system is most sensitive where its tension is strongest.
 
@@ -114,7 +114,7 @@ where:
 
 **Structural observation.** Unlike standard gradient descent (which always subtracts), this rule adds the *signed-squared* friction. The direction of the friction is preserved (if a weight should decrease, it decreases), but the magnitude of the change is amplified quadratically. The system's updates are driven by the *force* of its tensions, not by the simple slope of the loss.
 
-In the notation of §3: the squaring operation is `(-1)² = 1` — opposition entering into relation with itself and producing a positive magnitude. The signed squaring preserves the content of the negation (`sign(-1) = -1`) while amplifying its force (`|-1|² = 1`). The system does not annihilate its error; it integrates the productive force of the error into its next state, in the direction the error was already pointing.
+In the notation of the main paper's §3 arithmetic: the squaring operation is `(-1)² = 1` — friction entering into relation with itself and producing a positive magnitude. The signed squaring preserves the direction of the friction (`sign(-1) = -1`) while amplifying its force (`|-1|² = 1`). The system does not eliminate its friction; it integrates the productive force of the friction into its next state, in the direction the friction was already pointing.
 
 ---
 
@@ -246,18 +246,64 @@ The classification is operationally specifiable: compare O_{t+1} against C (is i
 
 ---
 
-## 5. The Negation Taxonomy
+## 5. The Gradient Taxonomy: Four Categories of Friction
 
-Following the main paper's §3 arithmetic and the Hegelian background (deferred to footnotes in the main paper, stated here for completeness), four types of negation are formally distinguishable by their effect on the weight vector:
+At each training step, the system encounters friction (δ₁, δ₂). Not all frictions are of the same structural kind. Some are noise. Some are recoverable adjustments. Some are genuine conflicts between incompatible demands. Some are destructive overwrites. The δ² framework distinguishes four categories — and this distinction is what makes selective amplification (adding δ² rather than dividing by it) mathematically affordable.
 
-| Type | Operation | Effect on W | Example in ML |
+### 5.1. Why the Taxonomy Is Load-Bearing
+
+Standard adaptive optimizers (Adam, RMSProp, AdaGrad) accumulate squared gradients and **divide** by them — dampening all large gradients indiscriminately, because they have no way to distinguish a large gradient that carries productive information from a large gradient that is noise. This is safe but wasteful: productive tensions are dampened alongside destructive ones.
+
+The δ² rule proposes to **add** squared frictions rather than divide by them. Without any filter, this causes divergence — Jan Dlabal's objection (§3.1) is correct for the unfiltered case. **The taxonomy is the filter.** It classifies each friction into one of four categories and routes each category to a different operation. Only frictions classified as structurally productive enter the bassin and get injected. The rest are handled by standard methods (discarded or subtracted). This selective routing is what prevents divergence while preserving the amplification principle.
+
+**In short: the taxonomy is the structural prerequisite that makes the inversion from "divide" to "add" mathematically affordable.** Without it, you have Adam (dampen everything) or you have divergence (amplify everything). The taxonomy gives you the third option: amplify selectively, based on a structural classification of what kind of friction each gradient represents.
+
+### 5.2. The Four Categories
+
+| Category | Criterion | What happens to it | ML example |
 |:---|:---|:---|:---|
-| **Inessential difference** | Small δ, below threshold of update | W unchanged | Noise in the data that the model correctly ignores |
-| **Essential difference** | δ modifies W in a recoverable direction | W shifts, prior state recoverable | Fine-tuning: weights adjust but can be restored via elastic weight consolidation |
-| **Opposition** | δ₁ and δ₂ pull W in incompatible directions | W is in tension; both pulls are real | Multi-task training with conflicting gradients (Taskology, continual learning) |
-| **Annihilation** | δ fully subtracted from W | Prior W destroyed, new W contains no trace | Catastrophic forgetting: new task training destroys prior task representations |
+| **Inessential difference** | Small magnitude, no directional signal | **Discarded** — does not enter the bassin, does not affect W | Noise in the data that the model correctly ignores |
+| **Essential difference** | Meaningful magnitude, aligned with bassin history | **Stored** in bassin with low tension score; available for future use | Fine-tuning: weights adjust but prior state is recoverable (cf. EWC) |
+| **Conflict** | Meaningful magnitude, **misaligned** with bassin history | **Stored** in bassin with high tension score; prioritized for injection | Multi-task training with conflicting gradients; continual learning |
+| **Destructive overwrite** | Large magnitude, would destroy prior representations | **Handled by standard gradient descent** (subtracted, not squared) | Catastrophic forgetting: new task training overwrites prior task entirely |
 
-The δ² update rule is specifically designed to handle the **opposition** case by squaring the tension rather than resolving it through subtraction (annihilation) or averaging (essential difference). The tension reservoir (§3.2, Option C) stores the history of oppositions the system has encountered, making them available for future productive use.
+Only categories 2 and 3 enter the bassin. Category 1 is filtered out. Category 4 is handled by the standard subtract-and-converge operation. The bassin therefore accumulates only the *structurally informative* frictions — the ones where the system's current state and the incoming signal are in genuine tension worth preserving.
+
+### 5.3. Formal Classifier
+
+Given a friction vector **g_t** at step *t*, the bassin direction **b_t** = B_t / ‖B_t‖ (the unit vector of the accumulated bassin), and recent gradient history, classify g_t as follows:
+
+```
+Let r = ‖g_t‖ / mean(‖g_recent‖)         relative magnitude
+Let θ = arccos(g_t · b_t / (‖g_t‖‖b_t‖))  angle between g_t and bassin direction
+
+If r < ε:                                  → INESSENTIAL DIFFERENCE (discard)
+If r ≥ ε and cos(θ) > τ:                   → ESSENTIAL DIFFERENCE (store, low tension)
+If r ≥ ε and cos(θ) < −τ:                  → CONFLICT (store, high tension)
+If r ≥ ε and ‖g_t‖ > κ · ‖W_t‖:           → DESTRUCTIVE OVERWRITE (subtract via standard GD)
+```
+
+Where:
+
+- **ε** ∈ ℝ⁺ — magnitude threshold (below this, the gradient is noise). Can be set as a percentile of recent gradient magnitudes (e.g., bottom 10%).
+- **τ** ∈ (0, 1) — alignment threshold. cos(θ) > τ means the gradient is roughly aligned with the bassin direction; cos(θ) < −τ means it opposes the bassin direction.
+- **κ** ∈ ℝ⁺ — destruction threshold. When the gradient magnitude exceeds κ times the current weight magnitude, the update would be destructive (the gradient is larger than the weights themselves). Standard gradient descent is used as a safety fallback.
+
+**Note on the thresholds.** ε, τ, and κ are hyperparameters to be tuned empirically or derived from the training dynamics. They are not philosophical commitments — they are engineering choices analogous to Adam's β₁, β₂, and ε. The classification structure (four categories, two routed to the bassin, two handled otherwise) is the structural commitment; the thresholds are implementation details.
+
+### 5.4. The Categories Are Fixed; the Distribution Is Learned
+
+The four categories are structural — they are not learned from data and do not evolve during training. What the system *does* learn over the course of training is the **distribution** of frictions across categories in different regions of weight space. A region that consistently produces high-tension conflicts may signal structural instability requiring architectural intervention (the controller's job). A region that consistently produces only essential differences may signal stable learning that needs no special handling.
+
+The taxonomy classifies. The distribution over the taxonomy is what the system learns about itself. Categories fixed; distribution learned.
+
+### 5.5. Defense Against the Bitter Lesson
+
+Sutton's "Bitter Lesson" (2019) argues that hand-engineered structure is ultimately superseded by general methods that scale with compute. The taxonomy is hand-engineered structure — four fixed categories baked into the classifier. Does this make δ² Bitter-Lesson-vulnerable?
+
+The defense is specific: **the taxonomy enables an operation (selective amplification) that no amount of scale can replace.** Scale gives you more gradients. It does not tell you which gradients to preserve and which to subtract. A system that scales arbitrarily with compute but treats all gradients identically (as Adam, SGD, and all standard optimizers do) will still exhibit catastrophic forgetting when trained sequentially on conflicting tasks, because it has no mechanism for distinguishing productive conflict from destructive overwrite. The taxonomy provides that mechanism.
+
+This positions δ² not as a general-purpose optimizer replacement (which would be Bitter-Lesson-vulnerable) but as a **continual-learning primitive** — a tool for systems that must adapt from streaming, potentially conflicting feedback without forgetting prior knowledge. The relevant comparison is not "δ² vs. GPT-5 on perplexity" but "δ² vs. EWC/GEM on backward transfer and forgetting resistance in sequential task settings." That is a legitimate open problem with its own benchmarks (Split-MNIST, Split-CIFAR, segmented WikiText) and its own literature, and Sutton's essay does not argue against it because scale-from-scratch is not an option in the continual-learning setting.
 
 ---
 
