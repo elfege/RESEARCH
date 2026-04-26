@@ -305,6 +305,26 @@ The defense is specific: **the taxonomy enables an operation (selective amplific
 
 This positions δ² not as a general-purpose optimizer replacement (which would be Bitter-Lesson-vulnerable) but as a **continual-learning primitive** — a tool for systems that must adapt from streaming, potentially conflicting feedback without forgetting prior knowledge. The relevant comparison is not "δ² vs. GPT-5 on perplexity" but "δ² vs. EWC/GEM on backward transfer and forgetting resistance in sequential task settings." That is a legitimate open problem with its own benchmarks (Split-MNIST, Split-CIFAR, segmented WikiText) and its own literature, and Sutton's essay does not argue against it because scale-from-scratch is not an option in the continual-learning setting.
 
+### 5.6. Two Levels of Operation: Heuristic and Epistemogenetic
+
+The δ² framework operates at two distinct levels. Both are coherent within the same structural apparatus, but they make different kinds of claims and should not be read into each other by mistake.
+
+**Level 1 — Heuristic (what gets benchmarked).**
+
+At this level, the system is a learning machine with a controller that decides, at each step, whether to descend (standard gradient descent: subtract error) or grow (δ² injection: add squared friction from the bassin). The controller's decision is gated by observable quantities: loss trajectory, gradient norm, bassin tension score, entropy of the friction distribution across the four categories. The bassin retains structured frictions classified by the taxonomy of §5.2. The entire pipeline — classifier, bassin, controller, injection — is implementable, trainable, and benchmarkable against existing continual-learning baselines (EWC, GEM, progressive networks) on standard sequential-task settings (Split-MNIST, Split-CIFAR, segmented WikiText).
+
+At this level, the question is empirical: **does a system with a structured friction reservoir and a selective injection policy outperform existing continual-learning methods on backward transfer and forgetting resistance?** The answer is testable, and the answer is what gets published in an ML venue. No philosophical commitment is required to run the benchmark or interpret its results.
+
+**Level 2 — Epistemogenetic (what makes the project philosophically interesting beyond ML).**
+
+At this level, the system is not merely adapting to data but recognizing the **limits of its own knowledge** through the structure of its own accumulated tensions. A region of weight space where the bassin consistently accumulates high-tension conflicts (category 3 of §5.2) is a region where the system's current representations are structurally inadequate — not just locally wrong (which gradient descent can fix) but in tension with incompatible demands that no single weight configuration can satisfy.
+
+When the system detects such structural inadequacy — a persistent high-tension region that the controller cannot resolve through injection alone — it can trigger **outward-facing processes**: dialogue with an external system, targeted data retrieval, architectural revision (adding capacity), or flagging the region for human attention. The bassin's role at this level is not to fix the problem but to **identify where the system needs help it cannot provide to itself**. This is the formal analog of what the main paper's §5 calls "reflexive self-relation": the system producing a representation of its own operational limits, not as a prompted self-critique but as a structural consequence of the friction distribution it has accumulated.
+
+**The two levels are related but separable.** Level 1 is a prerequisite for Level 2 (without the bassin and the classifier, there is no friction distribution to read). But Level 1 does not entail Level 2: a system can have a bassin and a controller and run continual-learning benchmarks without ever detecting its own structural limits. The epistemogenetic level emerges when the system *reads its own bassin* — when the friction distribution becomes an input to the system's own reasoning about what to do next, rather than merely a source of injection into the weights.
+
+Whether Level 2 is achievable with current architectures, and under what conditions, is an open question. It is the question the RS formula (§4) is designed to test: **RS > 0 is a necessary condition for Level 2 to be running.** A system at Level 1 alone (heuristic) may have RS = 0 throughout — it is a well-engineered optimizer, but it does not read its own bassin as a representation of its own limits. A system at Level 2 (epistemogenetic) must have RS > 0 at the moments when it detects its own structural inadequacy, because that detection is a self-predication about a property of its own operation.
+
 ---
 
 ## 6. Connection to the Main Paper
@@ -317,6 +337,7 @@ This positions δ² not as a general-purpose optimizer replacement (which would 
 | §4.5 level-of-analysis | §2.1 note | The difference is not in what we compute (δ₂ = ∇L) but in what we do with it |
 | §5 RS formula | §4 | RS as a measurable quantity with operationally distinguishable response types |
 | Preamble four-point thesis | §4.2, §4.3 | The formal test for whether RS > 0 |
+| §5 case study + §5.3 gradient framing | §5.6 Level 2 | RS > 0 as necessary condition for epistemogenetic level |
 
 ---
 
