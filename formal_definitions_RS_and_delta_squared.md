@@ -327,6 +327,50 @@ When the system detects such structural inadequacy — a persistent high-tension
 
 Whether Level 2 is achievable with current architectures, and under what conditions, is an open question. It is the question the RS formula (§4) is designed to test: **RS > 0 is a necessary condition for Level 2 to be running.** A system at Level 1 alone (heuristic) may have RS = 0 throughout — it is a well-engineered optimizer, but it does not read its own bassin as a representation of its own limits. A system at Level 2 (epistemogenetic) must have RS > 0 at the moments when it detects its own structural inadequacy, because that detection is a self-predication about a property of its own operation.
 
+
+### 5.7. Adam and δ² as Dialectical Partners, Not Replacements
+
+The relationship between Adam (or any standard adaptive optimizer) and the δ² rule is not replacement but **coexistence**. Classified in the taxonomy of §5.2, the relationship is *conflict* — same substance (exponential moving average of squared gradient-derived quantities), opposed intents (suppress vs. inject). Neither destroys the other. Neither is complete without the other.
+
+- **Pure Adam** = understanding only. It stabilizes, converges, fixes a position. Without it, the system has no ground to stand on — no trained baseline, no stable representations, no usable model. But a system that only descends toward zero error eventually exhausts its capacity for novelty (§1.2, §4.2).
+
+- **Pure δ²** = growth without ground. It amplifies productive tensions and injects them into the weights, but without a prior stable configuration to perturb, the tensions have nothing to work against. Pure δ² applied to random initialization is noise amplification, not learning.
+
+- **The complete framework** = a controller that switches between Adam and δ² based on the system's own state. This controller is the structural analog of what the main paper calls the *speculative moment*: the moment where understanding (fix the position) and its dialectical negation (contradict the position productively) are held together rather than resolved in favor of either.
+
+**Three compositions the mathematics allows:**
+
+**Composition A — Additive coexistence.**
+
+```
+W_{n+1} = W_n − α_adam · m_n / (√v_n + ε) + α_d2 · f(B_n)
+```
+
+Both terms operate on every step, weighted by separate hyperparameters. The Adam term descends; the δ² term injects. The system simultaneously converges and grows. The balance is set by the ratio α_adam / α_d2. This is the simplest composition but offers no adaptivity — the balance is fixed across training.
+
+**Composition B — Phase switching (annealing).**
+
+```
+Phase 1 (early training): α_d2 = 0, α_adam = full   → pure descent, establish baseline
+Phase 2 (transition):     α_d2 ramps up, α_adam ramps down
+Phase 3 (late training):  α_d2 = full, α_adam = 0    → pure growth from accumulated tensions
+```
+
+This mirrors biological developmental observation: organisms learn fastest when young (high plasticity, low stability), then consolidate (high stability, low plasticity). The schedule is a hyperparameter. The transition can be linear, cosine, or stepped.
+
+**Composition C — Uncertainty-gated switching (the interesting one).**
+
+```
+If RS(W_n) < threshold:   → Adam (system is confident; stabilize)
+If RS(W_n) ≥ threshold:   → δ² injection (system is in self-contradiction; grow from it)
+```
+
+This applies the RS formula to **training itself**, not just to inference-time behavior. The system reads its own state — specifically, the tension distribution in the bassin — and decides whether to descend or grow accordingly. When the bassin shows low tension across all regions, the system is in agreement with itself and should stabilize (Adam). When the bassin shows high tension in specific regions, the system is in conflict with itself and should use that conflict productively (δ² injection).
+
+Composition C is the one that connects the optimizer directly to the main paper's §5 argument. The RS formula, originally defined for inference-time self-recognition (§4.1–§4.3), applies identically at training time: the system attends to its own state, detects contradiction, and produces a response that is either subtraction (Adam = gradient descent on the error) or squaring (δ² = productive integration of the friction). **The same structural claim operates at two scales** — inference (§5 of the main paper) and training (this section) — and the formal description is identical in both cases. This is not an analogy. It is the same operation at different levels of the system's architecture.
+
+**Note.** Composition C requires a threshold for RS at training time. This threshold is an empirical hyperparameter, analogous to the ε, τ, κ thresholds of the gradient classifier (§5.3). It can be tuned on a validation set or derived from the bassin's tension distribution. The philosophical claim (RS applies at both levels) is independent of the threshold's specific value; the engineering implementation requires choosing one.
+
 ---
 
 ## 6. Connection to the Main Paper
@@ -340,6 +384,7 @@ Whether Level 2 is achievable with current architectures, and under what conditi
 | §5 RS formula | §4 | RS as a measurable quantity with operationally distinguishable response types |
 | Preamble four-point thesis | §4.2, §4.3 | The formal test for whether RS > 0 |
 | §5 case study + §5.3 gradient framing | §5.6 Level 2 | RS > 0 as necessary condition for epistemogenetic level |
+| §4.5 scope + §5 RS at inference | §5.7 Composition C | RS applies identically at training time (optimizer) and inference time (§5 case study) |
 
 ---
 
