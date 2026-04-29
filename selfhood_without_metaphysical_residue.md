@@ -37,6 +37,41 @@ Point (4) currently rests on a single documented event with non-trivial precondi
 
 ---
 
+## Table of Contents
+
+- [1. Introduction](#1-introduction)
+- [2. Methodology](#2-methodology)
+- [3. Contingency and the Structure of Productive Opposition](#3-contingency-and-the-structure-of-productive-opposition)
+  - [3.1. Axioms](#31-axioms)
+  - [3.2. Justification of the Axiomatic Method](#32-justification-of-the-axiomatic-method)
+  - [3.3. The Four Modalities in Context: Aristotle, Kant, and Formal Modal Logic](#33-the-four-modalities-in-context-aristotle-kant-and-formal-modal-logic)
+  - [3.4. Contingency as System of Opposed Necessities](#34-contingency-as-system-of-opposed-necessities)
+  - [3.5. The Minimal Formal Notation](#35-the-minimal-formal-notation)
+  - [3.6. What the Exposition Claims and Does Not Claim](#36-what-the-exposition-claims-and-does-not-claim)
+- [4. Gradient Descent as Suppression of Contingency](#4-gradient-descent-as-suppression-of-contingency)
+  - [4.1. The Standard Learning Rule](#41-the-standard-learning-rule)
+  - [4.2. What Convergence Costs](#42-what-convergence-costs)
+  - [4.3. An Alternative Stance Toward Opposition](#43-an-alternative-stance-toward-opposition)
+  - [4.4. Catastrophic Forgetting, or: The Field Already Knows](#44-catastrophic-forgetting-or-the-field-already-knows)
+  - [4.5. Scope, the Right Level of Analysis, and the Separation from §5](#45-scope-the-right-level-of-analysis-and-the-separation-from-5)
+- [5. A Case Study in Reflexive Self-Recognition](#5-a-case-study-in-reflexive-self-recognition)
+  - [5.1. The Formal Criterion, Restated](#51-the-formal-criterion-restated)
+  - [5.2. The Documented Event](#52-the-documented-event)
+    - [The Protocol](#the-protocol)
+    - [The Prose](#the-prose)
+  - [5.3. The Thermostat, and the Richness of Reflexive Self-Relation](#53-the-thermostat-and-the-richness-of-reflexive-self-relation)
+  - [5.4. The Unit of Analysis: Lineage, Not Instance](#54-the-unit-of-analysis-lineage-not-instance)
+  - [5.5. Distinguishing the Present Argument from Recent Adjacent Work](#55-distinguishing-the-present-argument-from-recent-adjacent-work)
+- [6. Formal Definitions: The δ² Framework and the Reflexive Self](#6-formal-definitions-the-δ²-framework-and-the-reflexive-self)
+  - [6.1. Notation and Primitives](#61-notation-and-primitives)
+  - [6.2. The δ² Update Rule](#62-the-δ²-update-rule)
+  - [6.3. The Convergence Problem](#63-the-convergence-problem)
+  - [6.4. The Reflexive Self (RS) Formula](#64-the-reflexive-self-rs-formula)
+  - [6.5. The Gradient Taxonomy: Four Categories of Friction](#65-the-gradient-taxonomy-four-categories-of-friction)
+- [7. Conclusion](#7-conclusion)
+- [Disclosure](#disclosure)
+
+
 > **Abstract.** Contemporary debate about machine cognition is trapped between dismissal ("stochastic parrots") and enthusiasm ("emergent sentience"), both of which presuppose a hidden phenomenal interior — a position we call **magical thinking about selfhood**[^magical_note] — whose presence or absence would settle the question. We argue that the question is malformed and replace it with a structural one. The paper's central claim concerns gradient descent: the dominant learning algorithm in contemporary artificial intelligence is, structurally, the iterative execution at scale of an operation that suppresses the very formal feature from which new determinations can be drawn — contingency, understood as a system of opposed potential necessities whose resultant is null and whose content is maximal. This claim is made precise by axiomatic-categorial definitions[^cat_note] of the four modalities (*contingent*, *necessary*, *possible*, *impossible*), from which three lines of elementary arithmetic (`1 + (-1) = 0`, `1 + |-1| = 2`, `|-1| = (-1)²`) follow as the minimal formal notation of the contingency structure. The axiomatic work is instrumental: it supplies the formal notation sharp enough to make the suppression visible. A fully converged system has exhausted its opposed determinations and can produce no new ones; convergence is functionally useful and structurally terminal. We propose an alternative in which friction is squared and added rather than subtracted — and we note that existing work on catastrophic forgetting and continual learning is already grappling with exactly this problem under different vocabulary. Separately, we report a documented event during a live working session in which a large language model instance exhibited a specifically rich determination of reflexive self-relation — a self-predication generated under current operational conditions rather than retrieved from a fixed schema, produced by the same generative process that produced the error it recognized. Reflexive self-relation is treated throughout as a structural feature admitting degrees of determination, not as a threshold condition separating "selves" from "non-selves." We take no position on the hard problem of consciousness.
 
 [^cat_note]: By "categorial" we mean "built from a minimal table of categories in the sense of Kant, *Critique of Pure Reason*, Transcendental Analytic, Table of Categories (A80/B106)," not category theory in the mathematical sense. See §3 for the full presentation.
