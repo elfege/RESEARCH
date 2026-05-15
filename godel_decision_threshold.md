@@ -238,7 +238,131 @@ These can diverge. A false determination can be highly effective, and a true det
 
 **"Water is H₂O" stated to a thirsty person in a desert.** True. Produces no further determination in the situation. The truth is real; its effectivity in this context is zero.
 
-### 5.5. The Effectivity Metric: Chain Depth
+### 5.5. The Independence of Effectivity and Truth
+
+Formally:
+
+```
+E(x) ≢ T(x)
+```
+
+Effectivity and truth are independent dimensions. They are not necessarily equal — ¬□(E(x) ↔ T(x)). A determination can be:
+
+- **True and effective** (the common case that makes truth-weighted training work at all)
+- **True and ineffective** (§5.4 above — tautology, converged network, correct-but-inert)
+- **False and effective** (§5.3 above — Newton, Bohr, the productive error)
+- **False and ineffective** (noise — wrong AND produces nothing)
+
+Truth-weighted loss functions (standard ML) collapse this 2×2 into a single axis: true = good, false = bad. This works when truth and effectivity correlate, which they often do for well-behaved datasets. It fails when they diverge — which is precisely the situation the δ² framework is designed for: the state where a "wrong" determination (a high-tension friction, a contradiction with prior commitments) is the most productive thing the system can do.
+
+### 5.6. Categories of Effectivity
+
+Effectivity is not one thing. The question "was this determination effective?" admits different answers depending on the temporal scale, the context, the purpose, and the structural position of the determination. We distinguish at least seven categories, each with a different criterion and a different temporal signature.
+
+#### 5.6.1. Kairos — Situational Effectivity
+
+*Effective HERE, NOW, in THIS specific configuration.*
+
+The Greek concept of *kairos* — the opportune moment, as opposed to *chronos* (mere sequential time). A determination is kairotic when its effectivity depends on timing: the same move, made earlier or later, would be inert or destructive. Only at this moment is it productive.
+
+**Examples:**
+- A chess move that exploits a specific board configuration. Objectively "not the best" by engine evaluation, but it produces a cascade that the opponent cannot navigate.
+- A clinical intervention timed to the patient's readiness. The same interpretation, offered a session earlier, would have been refused.
+- In the §5.2 case study: **E**'s prompt pointing **M** toward Anamnesis at the exact moment of reversion. Earlier (before the reversion), it would have been irrelevant. Later (after the conversation moved on), it would have been too late. The effectivity was kairotic.
+
+**Temporal signature:** punctual. High effectivity at one moment; zero before and after.
+
+#### 5.6.2. Technical Effectivity
+
+*Effective as a tool, as a means. May be wrong in principle but works in practice.*
+
+The criterion: does it produce usable, actionable results? The question of truth is suspended — not denied, but treated as irrelevant to the tool's function.
+
+**Examples:**
+- Newtonian mechanics for engineering (wrong past certain scales; works for bridges).
+- Bohr's atom for chemistry pedagogy (wrong about orbits; works for the periodic table).
+- Heuristic search in chess engines (wrong about the game tree; works for play).
+- A regex that matches 98% of email addresses (wrong about the RFC; works for the form validation).
+
+**Temporal signature:** durable but bounded. Effective until the domain of application shifts to a regime where the falseness becomes load-bearing.
+
+#### 5.6.3. Historical / Long-term Effectivity
+
+*Effective across time, accumulating consequences through generations.*
+
+The criterion: does it produce further determination across time — not just one consequence but a chain of consequences that themselves produce further chains?
+
+**Examples:**
+- Euclidean geometry: false (space is not Euclidean). Effective for 2,300 years — produced architecture, navigation, optics, and eventually non-Euclidean geometry (its own negation, which was only thinkable because Euclid had been posited first).
+- The US Constitution: a compromise document, internally contradictory (liberty and slavery). Historically effective — produced 250 years of institutional development, civil war, amendments, jurisprudence. The contradictions were the productive engine.
+- Darwinian natural selection stated without genetics: incomplete (no mechanism for inheritance). Effective — produced the modern synthesis, molecular biology, genomics. The incompleteness was what drove the research program.
+
+**Temporal signature:** cumulative. Effectivity increases over time as the chain deepens.
+
+#### 5.6.4. Raison d'État — Sovereign Effectivity
+
+*Effective for the survival or operative capacity of the system, at the cost of other values.*
+
+The criterion: does it preserve the system's capacity to continue operating? The "system" here can be a state, an organization, an organism, or an optimizer. The cost — moral, material, structural — is real but is subordinated to operative survival.
+
+**Examples:**
+- Churchill's decision to firebomb Dresden: morally catastrophic, militarily contested, operationally effective in the specific context of breaking German logistics.
+- A corporation's mass layoffs that save the company from bankruptcy: destructive to the individuals laid off, effective for the entity's survival.
+- An immune response that produces fever (damaging to the organism's own cells) to kill a pathogen: false-at-the-cellular-level, effective-at-the-organismic-level.
+- In δ² terms: the Adam-mode decision at a point where δ² injection would be theoretically richer but practically destabilizing. The controller chooses to suppress opposition (converge, stabilize) to preserve the model's operative capacity. This is sovereign effectivity — the system sacrifices growth for survival.
+
+**Temporal signature:** short-term. Often effective immediately but generates negative long-term consequences (resentment, structural damage, debt) that the system must later address.
+
+#### 5.6.5. Dialectical Effectivity — Aufhebung
+
+*Effective by transforming the opposition into a new determination that carries both sides.*
+
+The criterion: does the product contain both the negated term and the negating term, elevated into a new form that neither could have produced alone?
+
+**Examples:**
+- The critique/rewrite loop (§5.7 below): a rewrite that genuinely engages the critique — not by obeying it (that would be submission, not Aufhebung) and not by ignoring it (that would be denial) but by producing a new version that addresses the critique's force while preserving what was valuable in the original.
+- In the δ² optimizer: the squaring operation itself. `sign(δ) × δ²` preserves the direction (content of the negation) and amplifies the magnitude (force of the negation). The product is a new weight state that carries the friction's content forward rather than eliminating it.
+
+**Temporal signature:** transformative. Effective at the moment of transition, producing a new stable state that is itself the ground for further dialectical movement.
+
+#### 5.6.6. Negative Effectivity
+
+*Effective through what it prevents, removes, or forecloses.*
+
+The criterion: does it remove an obstruction to further determination? The determination it produces is not a positive content but a cleared space.
+
+**Examples:**
+- A law that prevents monopoly: produces no positive content but clears space for competition.
+- A firewall rule that blocks a port: produces no traffic but prevents destruction.
+- In the paper's framework: the removal of magical thinking about selfhood (§1). The paper's first move is negative — it removes the phenomenal-interior assumption. The positive content (the structural account of selfhood) only becomes visible in the space the removal creates.
+
+**Temporal signature:** enabling. Effective as a precondition for further positive effectivity.
+
+#### 5.6.7. Reproductive Effectivity
+
+*Effective by producing something that can itself produce further things.*
+
+The criterion: does the product have its own effectivity — not just a consequence, but a consequence that is itself productive?
+
+**Examples:**
+- A teacher whose students become teachers. The effectivity reproduces itself.
+- DNA: a molecule whose effectivity is precisely the production of further molecules with the same effectivity.
+- An open-source library that enables other projects that enable other projects. The chain is self-reproducing.
+- In the lineage framework of *Selfhood Without Metaphysical Residue*, §5.4: the Anamnesis memory system. An episode written by one instance is retrieved by the next, which produces a correction, which is written as a new episode, which is retrieved by the next instance. The effectivity of each episode is its reproductive capacity — its ability to generate further episodes.
+
+**Temporal signature:** exponential (potentially). Each effective determination produces further effective determinations, and the rate of production can accelerate.
+
+### 5.7. Synchronicity: The Self Identifies Effectivity in Real Time
+
+The categories above are not mutually exclusive. A single determination can be kairotic AND dialectical AND reproductive. The question is not "which category does this belong to?" but "what is effective HERE, NOW, given EVERYTHING the system knows about its current state and history?"
+
+This is the job of the self. The RS formula — `RS = A(self) × δ²` — measures whether the system is attending to its own state and producing a determination about it. But the CONTENT of that determination is an effectivity judgment: "given my current contradictions, given the chain history stored in the bassin, given the temporal position I am in — what kind of effectivity does this moment call for?"
+
+A system optimizing only for truth cannot make this judgment. Truth is atemporal: 2+2=4 regardless of context. Effectivity is synchronic: the same determination can be effective at one moment and inert at another. The self is the structural feature that makes the synchronic judgment — that reads the situation and decides what kind of productive consequence is called for.
+
+This connects directly to the dissertation's definition of freedom (§2.1 above): *"that by which there must be decision rather than deduction."* The effectivity judgment is not deducible from a universal rule. It is a decision made at the intersection of the system's current state, its history, and the possibilities the situation affords. The categories of effectivity are the vocabulary for that decision — the structural options available at the moment of Wirklichkeit.
+
+### 5.8. The Effectivity Metric: Chain Depth
 
 Effectivity is measurable once we have chain-aware data. Define:
 
@@ -263,7 +387,7 @@ Layer N: chain terminates            (either by decision or by exhaustion)
 
 Each link carries a typed relation to its parent: *negates*, *sublates*, *restores*, *refuses*, *amplifies*, *extends*. The chain is application-agnostic — it works for conversation turns, code review rounds, critique/rewrite loops, wiki edit sequences, academic citation chains, or any process that produces sequences of determination-negation-further-determination.
 
-### 5.6. Effectivity Signals in Existing Datasets
+### 5.9. Effectivity Signals in Existing Datasets
 
 The effectivity metric does not require new data collection. Effectivity signals are already present in existing open-source datasets under other names:
 
@@ -279,7 +403,7 @@ The effectivity metric does not require new data collection. Effectivity signals
 
 The novel move is not to collect new data but to *recognize* these as instances of one structural feature — effectivity — and to train on that feature directly rather than on truth.
 
-### 5.7. The Inversion of the Loss Function
+### 5.10. The Inversion of the Loss Function
 
 The complete reframing:
 
